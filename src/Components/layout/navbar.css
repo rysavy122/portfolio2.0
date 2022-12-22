@@ -1,0 +1,52 @@
+img#logo{
+    position: fixed;
+    top:-13vh;
+    right:-13vw;
+    z-index:-10;
+
+}
+
+#footer-content p{
+    width:100vw;
+    text-align: center;
+    color:black;
+    margin-top:5vh;
+    margin-bottom:20px;
+}
+
+#external-links{
+
+    background-color: #F9F003;
+    background-color: yellow;
+    margin-left:60vw;
+    margin-bottom:5vh;
+    margin-top:5vh;
+
+}
+
+#external-links svg{
+    margin:20px;
+    margin-left:10vw;
+
+}
+
+#external-links svg:hover{
+    cursor: pointer;
+
+}
+
+#sidenav{
+    display: block;
+    position: fixed;
+    background-color: #F9F003;
+    width:100vw;
+    display: flex;
+    justify-content: space-around;
+    margin:0px;
+
+}
+
+#sidenav svg{
+    margin:-10px;
+    height:50px;
+}
