@@ -43,6 +43,7 @@ img#logo{
     display: flex;
     justify-content: space-around;
     margin:0px;
+    z-index: 10;
 
 }
 

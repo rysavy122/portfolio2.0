@@ -19,3 +19,12 @@ img{
     width:100%;
     margin: auto;
 }
+
+#contact-page svg{
+    margin: 10px auto;
+    margin-bottom:15px;
+}
+
+#contact-page{
+    background-color: white;
+}

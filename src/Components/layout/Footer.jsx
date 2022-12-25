@@ -1,6 +1,7 @@
 import React from 'react'
 import GithubIcon from '../assets/icons/SocialMedialicons/GithubIcon'
 import LinkedinIcon from '../assets/icons/SocialMedialicons/LinkedinIcon'
+import { Link } from '@chakra-ui/layout';
 
 import '../layout/navbar.css';
 import { Flex, Text } from '@chakra-ui/layout';
@@ -16,8 +17,12 @@ const Footer = () => {
 
 
     <Flex id="external-links">
+      <Link href='https://github.com/rysavy122' isExternal>
         <GithubIcon/>
+      </Link>
+      <Link href='https://www.linkedin.com/in/denisrysavy/' isExternal> 
         <LinkedinIcon/>
+      </Link>
     </Flex>
 
         <div id="footer-content" >
