@@ -28,3 +28,9 @@ img{
 #contact-page{
     background-color: white;
 }
+
+#project-page svg{
+    color: black;
+    height:40px;
+   
+}

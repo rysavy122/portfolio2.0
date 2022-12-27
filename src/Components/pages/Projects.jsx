@@ -1,13 +1,16 @@
 import React from 'react'
-import { Text,  } from '@chakra-ui/layout'
+import { Text, Flex, Link  } from '@chakra-ui/layout'
 import {Image, Card, Heading,Button, CardHeader, CardBody, CardFooter, SimpleGrid } from '@chakra-ui/react'
-import GithubIcon from '../assets/icons/SocialMedialicons/GithubIcon'
+import SlGlobeIcon from '../assets/icons/technologiesIcons/SlGlobeIcon'
+import CodeIcon from '../assets/icons/technologiesIcons/CodeIcon'
+
+
 
 
 
 const Projects = () => {
   return (
-    <>
+    <div id='project-page'>
       <Text fontSize="6xl" >Projects</Text>
         <SimpleGrid bgColor={'white'} spacing={4} templateColumns='repeat(auto-fill, minmax(200px, 1fr))'>
       <Card>
@@ -22,9 +25,13 @@ const Projects = () => {
         src='https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
         alt='Chakra UI'
       />
-        <CardFooter>
-          <Button>See live</Button>
-          <GithubIcon/>
+        <CardFooter justifyContent={'space-between'}>
+          <a href='https://github.com/' target={'_blank'} >
+            <Button>Visit me</Button>
+          </a>
+          <Link  href='https://github.com/' isExternal>
+            <CodeIcon cursor={'pointer'} id="codeicon"/>       
+          </Link>         
         </CardFooter>
       </Card>
       <Card>
@@ -39,10 +46,13 @@ const Projects = () => {
         src='https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
         alt='Chakra UI'
       />
-        <CardFooter>
-          <Button>See live</Button>
-          <GithubIcon/>
-
+        <CardFooter justifyContent={'space-between'}>
+        <a href='https://github.com/' target={'_blank'} >
+            <Button>Visit me</Button>
+          </a>
+          <Link  href='https://github.com/' isExternal>
+            <CodeIcon cursor={'pointer'} id="codeicon"/>       
+          </Link>         
         </CardFooter>
       </Card>
       <Card>
@@ -57,9 +67,13 @@ const Projects = () => {
         src='https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
         alt='Chakra UI'
       />
-        <CardFooter>
-          <Button>See live</Button>
-          <GithubIcon/>
+        <CardFooter justifyContent={'space-between'}>
+        <a href='https://github.com/' target={'_blank'} >
+            <Button>Visit me</Button>
+          </a>
+          <Link  href='https://github.com/' isExternal>
+            <CodeIcon cursor={'pointer'} id="codeicon"/>       
+          </Link>         
         </CardFooter>
       </Card>
       <Card>
@@ -74,13 +88,17 @@ const Projects = () => {
         src='https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
         alt='Chakra UI'
       />
-        <CardFooter>
-          <Button>See live</Button>
-          <GithubIcon/>
+        <CardFooter justifyContent={'space-between'}>
+        <a href='https://github.com/' target={'_blank'} >
+            <Button>Visit me</Button>
+          </a>
+          <Link href='https://github.com/' isExternal>
+            <CodeIcon cursor={'pointer'} id="codeicon"/>       
+          </Link>         
         </CardFooter>
       </Card>
     </SimpleGrid>
-    </>
+    </div>
   )
 }
 
