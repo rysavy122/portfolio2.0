@@ -6,19 +6,35 @@
     line-height: 2;
     background-color: white;
     margin-top:15vh;
-
 }
 #about-page svg{
-
     height:100px;
     width:100px;
-       
-
 }
 img{
     width:100%;
     margin: auto;
 }
+
+#more {
+    margin:auto;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeIn 2s ease-in 1 forwards;
+    animation-delay: 1s;
+
+  }
+
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
 
 #contact-page svg{
     margin: 10px auto;
@@ -32,5 +48,32 @@ img{
 #project-page svg{
     color: black;
     height:40px;
-   
+}
+#hi {
+    opacity: 0;
+    animation: slideIn 1s ease-out 1 forwards;
+    transform: translateX(-30%);
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-30%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+
+  
+
+@media screen and (min-width:768px) {
+    #hi{
+        margin-left: -15vw;
+        font-size: 9em;
+        margin-top: 25vh;
+        margin-bottom:10vh;
+    }
+    
+
 }

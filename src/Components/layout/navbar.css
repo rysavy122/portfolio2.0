@@ -1,37 +1,36 @@
-img#logo{
+#logo1{
     position: fixed;
-    top:-13vh;
+    height:250px;
+    width:225px;
+    background-color: #F9F003;
+    position: absolute;
+    font-size: 4em;
+    top:-6vh;
     right:-13vw;
     z-index:-10;
-
 }
 
-#footer-content p{
-    width:100vw;
-    text-align: center;
-    color:black;
-    margin-top:5vh;
-    margin-bottom:20px;
-}
 
+#logo1 h1{
+    margin-left:-70px;
+    font-weight: 600;
+    line-height: 5rem;
+
+}
+#logo1 h2{
+    font-size: 17px;
+    font-weight: 600;
+    margin-left: -182px;
+    letter-spacing: 0.1rem;
+}
 #external-links{
 
     background-color: #F9F003;
     background-color: yellow;
-    margin-left:60vw;
+    margin-right:5vw;
     margin-bottom:5vh;
     margin-top:5vh;
-
-}
-
-#external-links svg{
-    margin:20px;
-    margin-left:10vw;
-
-}
-
-#external-links svg:hover{
-    cursor: pointer;
+    justify-content: space-around;
 
 }
 
@@ -44,8 +43,90 @@ img#logo{
     justify-content: space-around;
     margin:0px;
     z-index: 10;
+}
+#footer-content p{
+    width:100vw;
+    text-align: center;
+    color:black;
+    margin-top:5vh;
+}
+
+
+@media screen and (min-width: 768px){
+
+    #footer-content p{
+        width:115vw;
+        text-align: center;
+        color:black;
+        margin-left:10vw;
+        position: absolute;
+        bottom:0;
+        right:-10;
+        margin:100px;
+        margin-bottom: -10vh;
+        font-size: 1rem;
+        padding:50px;
+    }
+    
+
+    #sidenav{
+        display: block;
+        position: fixed;
+        background-color: #F9F003;
+        width:71.3vw;
+        display: flex;
+        justify-content: space-around;
+        margin:0px;
+        z-index: 10;
+    }
+
+    #logo1{
+        height:500px;
+        width:450px;
+        font-size: 8em;
+        background-color: #F9F003;
+        position: absolute;
+        top:-8vh;
+        right:12vw;
+    
+    }
+    #logo1 h1{
+        margin-left:-140px;
+        font-weight: 600;
+        line-height: 10rem;
+    
+    }
+    #logo1 h2{
+        font-size: 34px;
+        font-weight: 600;
+        margin-left: -376px;
+        letter-spacing: 0.3rem;
+    }
+
+    #external-links{
+
+        background-color: #F9F003;
+        background-color: yellow;
+        margin-right:34vw;
+        margin-bottom:5vh;
+        margin-top:5vh;
+    
+    }
 
 }
+
+
+
+#external-links svg{
+    margin:20px;
+
+}
+
+#external-links svg:hover{
+    cursor: pointer;
+
+}
+
 
 #sidenav svg{
     margin:-10px;

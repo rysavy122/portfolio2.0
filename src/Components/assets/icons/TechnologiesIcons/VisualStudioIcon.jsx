@@ -6,7 +6,7 @@ const VisualStudioIcon = () => {
   return (
 
     <div className='icons'>
-        <SiVisualstudiocode style={{color:'blue'}}/>
+        <SiVisualstudiocode style={{color:'#017ACC'}}/>
     </div>
   )
 }

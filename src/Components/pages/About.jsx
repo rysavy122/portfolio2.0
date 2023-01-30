@@ -11,6 +11,9 @@ import NodeIcon from '../assets/icons/TechnologiesIcons/NodeIcon';
 import ExpressIcon from '../assets/icons/TechnologiesIcons/ExpressIcon';
 import PostgresqlIcon from '../assets/icons/TechnologiesIcons/PostgresqlIcon';
 import GitIcon from '../assets/icons/TechnologiesIcons/GitIcon';
+import MongoDbIcon from '../assets/icons/TechnologiesIcons/MongoDbIcon';
+import VisualStudioIcon from '../assets/icons/TechnologiesIcons/VisualStudioIcon';
+
 
 
 const About = () => {
@@ -27,14 +30,20 @@ const About = () => {
 
       <Text w={'100vw'} mb={20} mt={20} fontSize="6xl" >My Skillset</Text>
       <Box bg={'white'} > 
+      <Text w={'100vw'} mb={10} mt={20} fontSize="4xl" >Frontend TechStack</Text>
         <CircularProgress mr={5} size='120px' value={92} color='yellow.400' thickness='8px' ><CircularProgressLabel><HtmlIcon/> <Text ml={'12%'} fontSize="12px" >HTML 5</Text></CircularProgressLabel></CircularProgress>
         <CircularProgress mr={5} size='120px' value={96} color='yellow.400' thickness='8px' ><CircularProgressLabel><CssIcon/> <Text ml={'12%'} fontSize="12px" >CSS 3</Text></CircularProgressLabel></CircularProgress>
         <CircularProgress mr={5} size='120px' value={60} color='yellow.400' thickness='8px' ><CircularProgressLabel><JsIcon/> <Text ml={'12%'} fontSize="12px" >JavaScript</Text></CircularProgressLabel></CircularProgress>
         <CircularProgress mr={5} size='120px' value={80} color='yellow.400' thickness='8px' ><CircularProgressLabel> <ReactIcon/> <Text ml={'12%'} fontSize="12px" >React</Text> </CircularProgressLabel></CircularProgress>
+      <Text w={'100vw'} mb={10} mt={20} fontSize="4xl" >Backend TechStack</Text>
         <CircularProgress mr={5} size='120px' value={30} color='yellow.400' thickness='8px' ><CircularProgressLabel> <NodeIcon/> <Text ml={'12%'} fontSize="12px" >Node.js</Text> </CircularProgressLabel></CircularProgress>
         <CircularProgress mr={5} size='120px' value={55} color='yellow.400' thickness='8px' ><CircularProgressLabel> <ExpressIcon/> <Text ml={'12%'} fontSize="12px" >express.js</Text> </CircularProgressLabel></CircularProgress>
         <CircularProgress mr={5} size='120px' value={60} color='yellow.400' thickness='8px' ><CircularProgressLabel> <PostgresqlIcon/>  <Text ml={'12%'} fontSize="12px" >Postgresql</Text></CircularProgressLabel></CircularProgress>
+        <CircularProgress mr={5} size='120px' value={36} color='yellow.400' thickness='8px' ><CircularProgressLabel> <MongoDbIcon/>  <Text ml={'12%'} fontSize="12px" >MongoDB</Text></CircularProgressLabel></CircularProgress>
+      <Text w={'100vw'} mb={10} mt={20} fontSize="4xl" >Version Control and Code Editor</Text>
+
         <CircularProgress mr={5} size='120px' value={86} color='yellow.400' thickness='8px' ><CircularProgressLabel> <GitIcon/>  <Text ml={'12%'} fontSize="12px" >Git</Text></CircularProgressLabel></CircularProgress>
+        <CircularProgress mr={5} size='120px' value={90} color='yellow.400' thickness='8px' ><CircularProgressLabel> <VisualStudioIcon/>  <Text ml={'12%'} fontSize="12px" >VS Code</Text></CircularProgressLabel></CircularProgress>
       </Box>
     </>
   )

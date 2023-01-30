@@ -28,14 +28,14 @@ const Contact = () => {
             type='submit'><SlPaperPlane style={{margin:'1px'}}/>
             </Button>
             <Flex alignItems='center' justifyContent="space-around" mt={10}> 
-              <Link href="mailto:rysavydenis3@gmail.com?subject=Hello&body=Hello,%20can%20we%20chat?" isExternal>
+              <a href="mailto:rysavydenis3@gmail.com?subject=Hello&body=Hello,%20can%20we%20chat?" target={'_blank'}>
                   <GmailIcon />
-                {/* Contact me by email */}
-              </Link>
-              <Link href="https://wa.me/+491630100503?text=Hello,%20can%20we%20chat?" isExternal>
+                  <Text ml={2}>Write me an email</Text>
+              </a>
+              <a href="https://wa.me/+491630100503?text=Hello,%20can%20we%20chat?" target={'_blank'}>
                 <WhatsAppIcon />
-                {/* <Text ml={2}>Contact me via WhatsApp</Text> */}
-              </Link>
+                <Text ml={2}>Write me on WhatsApp</Text>
+              </a>
               </Flex>
             </div>
       </Box> 

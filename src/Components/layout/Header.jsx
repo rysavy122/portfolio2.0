@@ -3,8 +3,11 @@ import logo from '../../../public/logo.png';
 
 const Header = () => {
   return (
-    <div>
-        <img id="logo" src={logo} alt="Logo"></img>
+    <div id="logo1">
+      <br />
+      <h1>rysavy</h1>
+      <h2>FULLSTACK WEBDEVELOPER</h2>
+      <br />
     </div>
   )
 }

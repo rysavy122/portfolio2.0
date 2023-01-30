@@ -24,20 +24,22 @@ const Footer = () => {
         <LinkedinIcon/>
       </Link>
     </Flex>
-
-        <div id="footer-content" >
-            <Text textAlign={'center'} fontSize={12}> © {new Date().getFullYear()} Denis Rysavy. All rights reserved.</Text>
-        </div>
-        <Button _hover={{
+    <Button _hover={{
                 backgroundColor:'yellow.300'}} 
                 backgroundColor={'yellow.200'} 
                 borderRadius={'50%'}
                 border={'1px solid blue'}
                 float={'left'}
-                m={2}
+                m={10}
+                mb={15}
+                mt={20}
+                ml={1}
                 h={10}
                 w={10}>{DE}     
     </Button>
+    <div id="footer-content" >
+            <Text textAlign={'center'} fontSize={12}> © {new Date().getFullYear()} Denis Rysavy. All rights reserved.</Text>
+    </div>
     </div>
   )
 }
