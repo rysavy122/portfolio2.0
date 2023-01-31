@@ -1,7 +1,6 @@
 import React from 'react'
 import { Text, Flex, Link  } from '@chakra-ui/layout'
 import {Image, Card, Heading,Button, CardHeader, CardBody, CardFooter, SimpleGrid } from '@chakra-ui/react'
-import SlGlobeIcon from '../assets/icons/technologiesIcons/SlGlobeIcon'
 import CodeIcon from '../assets/icons/technologiesIcons/CodeIcon'
 
 
@@ -12,7 +11,7 @@ const Projects = () => {
   return (
     <div id='project-page'>
       <Text fontSize="6xl" >Projects</Text>
-        <SimpleGrid bgColor={'white'} spacing={4} templateColumns='repeat(auto-fill, minmax(200px, 1fr))'>
+        <SimpleGrid m={5} w={100} bgColor={'white'} spacing={10} templateColumns='repeat(auto-fill, minmax(90vw, 1fr))'>
       <Card>
         <CardHeader>
           <Heading size='md'> First Project</Heading>
