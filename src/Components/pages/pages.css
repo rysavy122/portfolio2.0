@@ -24,7 +24,8 @@ img{
     opacity: 0;
     animation: fadeIn 2s ease-in 1 forwards;
     animation-delay: 1s;
-    margin-left: 49vw;
+    margin-left: 48vw;
+
   }
 
   
@@ -55,10 +56,12 @@ img{
     opacity: 0;
     animation: slideIn 1s ease-out 1 forwards;
     transform: translateX(-30%);
+    margin:auto;
     margin-top: 20vh;
     margin-bottom:5vh;
     width:100vw;
     font-size: 4rem;
+    margin-left: 0vw;
   }
   #container-home{
     height: 100vh;
@@ -84,7 +87,7 @@ img{
     width:90vw;
     text-align: center;
     margin-top: 25px;
-    margin-left: 3vw;
+    margin-left: 5vw;
   }
   
   @keyframes slideIn {
@@ -127,6 +130,7 @@ img{
     text-align: center;
     margin:auto;
     margin-top: 60px;
+
     }
     .span{
     font-weight: bold;

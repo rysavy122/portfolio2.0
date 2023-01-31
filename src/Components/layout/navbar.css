@@ -27,7 +27,7 @@
 
     background-color: #F9F003;
     background-color: yellow;
-    margin-right:5vw;
+    margin-right:16vw;
     margin-bottom:5vh;
     margin-top:5vh;
     justify-content: space-around;
@@ -48,7 +48,14 @@
     width:100vw;
     text-align: center;
     color:black;
-    margin-top:5vh;
+    margin-top:20vh;
+    margin-left: 60px;
+}
+
+#button{
+    margin:10px;
+    margin-top:60px;
+    margin-left:50px;
 }
 
 
