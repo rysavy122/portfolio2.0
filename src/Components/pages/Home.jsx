@@ -70,7 +70,7 @@ const Home = () => {
 
       </Box>
     </Box>
-      <Flex mt={-40}>
+      <Flex >
           <SlSpeedometer/>
           <SlSizeFullscreen />
           <SlScreenDesktop />
