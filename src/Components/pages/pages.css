@@ -24,7 +24,7 @@ img{
     opacity: 0;
     animation: fadeIn 2s ease-in 1 forwards;
     animation-delay: 1s;
-    margin-left: 48vw;
+    margin-left: 58vw;
 
   }
 
@@ -61,7 +61,7 @@ img{
     margin-bottom:5vh;
     width:100vw;
     font-size: 4rem;
-    margin-left: 0vw;
+    margin-left: 10vw;
   }
   #container-home{
     height: 100vh;
@@ -75,7 +75,8 @@ img{
     border: 1px solid #F9f003;
     background-color: #f9f10389;
     height:72vh;
-    width:107%;
+    width:90%;
+    margin-left: 9vw;
   }
 
   .span{
