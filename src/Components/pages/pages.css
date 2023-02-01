@@ -7,17 +7,25 @@
     background-color: white;
     margin-top:15vh;
 }
-#icon-flexbox{
-  margin-top: -40vh;
-}
 
+
+
+#icon-flexbox{
+  margin-top: -20vh;
+  margin-bottom:10vh;
+}
+#projects-h1{
+  margin-left: -15vw;
+}
 #about-page svg{
     height:100px;
     width:100px;
 }
-img{
-    width:100%;
+#about-page img{
+    width:100vw;
+    height:80%;
     margin: auto;
+    margin-right: 30vw;
 }
 
 #more {
@@ -30,16 +38,47 @@ img{
 
   }
 
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+  .text-values{
+    margin-top: 15vh;
+    font-size: 3rem;
   }
 
+
+  .box-values{
+    border:1px solid black;
+    border-left:0px;
+    border-right:0px;
+    margin:auto;
+    width:99.5vw;
+    margin-left:0vw;
+    margin-bottom: 10vh;
+    margin-top: 5vh;
+  }
+
+  .box-values svg{
+    margin:auto ;
+  }
+
+  .box-values-header h1{
+    font-size: 2em;
+    margin-bottom: 15px;
+    background-color: yellow;
+    padding:2vh;
+    border-bottom:1px solid black;
+
+  }
+
+
+  .box-values-header  svg{
+    padding-top: 15px;
+    background-color: yellow;
+    height: 3rem;
+    width:3rem;
+
+  }
+  .box-values-header{
+    background-color: yellow;
+  }
 
 #contact-page svg{
     margin: 10px auto;
@@ -48,6 +87,20 @@ img{
 
 #contact-page{
     background-color: white;
+    margin-right: 15vw;
+}
+
+.responsive{
+  padding:20px;
+  border-bottom:1px solid black;
+}
+
+.responsive svg{
+  height:50px;
+  width:50px;
+  margin:40px auto;
+  padding-left: -10px;
+  padding-right: -10px;
 }
 
 #project-page svg{
@@ -66,7 +119,7 @@ img{
     margin-left: 0vw;
   }
   #container-home{
-    height: 100vh;
+    height:350vh;
   }
 
   #spacer{
@@ -74,9 +127,9 @@ img{
   }
 
   #box-hidden{
-    border: 1px solid #F9f003;
-    background-color: #f9f10389;
-    height:72vh;
+/*     border: 1px solid #F9f003;
+    background-color: #f9f10389; */
+    height:67vh;
     width:90%;
     margin-left: 0vw;
   }
@@ -92,6 +145,19 @@ img{
     margin-top: 25px;
     margin-left: 5vw;
   }
+
+  .tech-stack{
+
+
+  }
+
+  .tech-stack-container{
+    margin: auto;
+    margin-right:25vw ;
+  }
+
+
+
   
   @keyframes slideIn {
     from {
@@ -102,6 +168,17 @@ img{
       transform: translateX(0%);
     }
   }
+
+    
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
 
   
 
@@ -140,8 +217,8 @@ img{
     font-size: 1.9rem;
     }
     #box-hidden{
-    border: 1px solid #F9f003;
-    background-color: #f9f10389;
+/*  border: 1px solid #F9f003;
+    background-color: #f9f10389; */
     height:60vh;
     width:107%;
     margin-left: -0vw;

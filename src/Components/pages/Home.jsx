@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { Box, Flex, Text } from '@chakra-ui/layout';
-import { SlArrowDown, SlEmotsmile, SlEqualizer, SlHeart, SlMagicWand,SlScreenDesktop, SlLike, SlScreenSmartphone, SlScreenTablet, SlSpeedometer, SlSizeFullscreen  } from 'react-icons/sl';
+import { SlArrowDown, SlEmotsmile, SlEqualizer, SlHeart, SlMagicWand,SlScreenDesktop, SlLike, SlScreenSmartphone, SlScreenTablet, SlSpeedometer, SlSizeActual, SlRocket, SlBubbles, SlBulb, SlNote, SlCheck, SlLock  } from 'react-icons/sl';
+import { BsCodeSlash, BsPlus, BsCurrencyDollar, BsDash } from 'react-icons/bs';
+import { TbEqual, TbHeartHandshake, TbRocket } from 'react-icons/tb';
+import {IoIosDesktop, IoIosPhonePortrait, IoIosLaptop,IoIosTabletLandscape,IoIosAdd,IoIosCheckmark} from 'react-icons/io';
+import {MdMoreTime, MdOutlineWeb, MdOutlineDesignServices,MdDesktopMac,MdTabletMac,MdPhoneIphone, MdCheck, MdLightbulbOutline, MdOutlineForum, MdOutlineThumbUpAlt,MdOutlineArrowForward, MdInsertEmoticon, MdOutlineHourglassDisabled, MdOutlineHttp, MdOutlineHourglassEmpty, MdOutlineSecurity, MdWarningAmber} from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import { transform } from 'framer-motion';
 
@@ -48,7 +52,6 @@ const Home = () => {
           display: isVisible ? "block" : "none" 
         }}>
         <Text id="intro">
-          <span className='span'>Welcome to my site ! </span> 
           My Name is <span className="span">Denis Rysavy</span>, I am 27 years old, living in Bremen, Germany 🇩🇪.
           <br/>
           <br />
@@ -65,23 +68,77 @@ const Home = () => {
           <br />
           <br />
           <br />
+          </Text>
           <Text>Thank you for visiting my online Portfolio ! 🙏</Text>
-        </Text>
-
+          <Text className="text-values">My key values</Text>
+            <Box className="box-values">
+              <Box className="box-values-header">
+              <SlSizeActual />
+                <h1>Responsive Webdesign</h1>
+              </Box>
+              <Flex className="responsive">
+                <MdDesktopMac />
+                <IoIosAdd />
+                <MdTabletMac />
+                <IoIosAdd />
+                <MdPhoneIphone />
+                <TbEqual />
+                <MdCheck/>
+              </Flex>
+              <Text p={2} bgColor={'yellow'}>Smartphone, Tablet, Laptop or Desktop ? 100% flexible Screensizes, fits any Device !</Text>
+            </Box>
+            <Box className="box-values">
+              <Box className="box-values-header">
+              <SlSpeedometer/>
+                <h1>Fast Pageload times</h1>
+              </Box>
+              <Flex className="responsive">
+                <MdOutlineWeb />
+                <BsDash />
+                <MdOutlineHourglassEmpty/>
+                <TbEqual />
+                <MdMoreTime />
+              </Flex>
+              <Text p={2} bgColor={'yellow'}>Lightweight and performant approach to keep the Pageload low. Becaurse time is money . . . </Text>
+            </Box>
+            <Box className="box-values">
+              <Box className="box-values-header">
+              <SlLock/>
+                <h1>Security</h1>
+              </Box>
+              <Flex className="responsive">
+                <MdOutlineWeb />
+                <BsDash />
+                <MdOutlineSecurity/>
+                <TbEqual />
+                <MdWarningAmber />
+              </Flex>
+              <Text p={2} bgColor={'yellow'}>Internet Security is a huge topic. It is very important to be safe out there.</Text>
+            </Box>
+            <Box className="box-values">
+              <Box className="box-values-header">
+              <SlEqualizer />
+                <h1>100% Customizable</h1>
+              </Box>
+              <Flex className="responsive">
+                <MdLightbulbOutline />
+                <MdOutlineArrowForward />
+                <MdOutlineForum/>
+                <MdOutlineArrowForward />
+                <MdOutlineDesignServices />
+                <TbEqual />
+                <MdInsertEmoticon />
+              </Flex>
+              <Text p={2} bgColor={'yellow'}>Need a special feature or design ? You name it, I make it. Fully customizable to your needs...</Text>
+            </Box>
       </Box>
     </Box>
-      <Flex >
-          <SlSpeedometer/>
-          <SlSizeFullscreen />
-          <SlScreenDesktop />
-          <SlScreenSmartphone />
-          <SlScreenTablet />
+{/*       <Flex id="icon-flexbox" >
+        <BsCodeSlash />
           <SlHeart />
-          <SlEqualizer />
           <SlLike />
-          <SlEmotsmile />
           <SlMagicWand />
-      </Flex>
+      </Flex> */}
   </>
   );
 };

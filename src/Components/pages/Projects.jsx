@@ -10,7 +10,7 @@ import CodeIcon from '../assets/icons/technologiesIcons/CodeIcon'
 const Projects = () => {
   return (
     <div id='project-page'>
-      <Text fontSize="6xl" >Projects</Text>
+      <Text id="projects-h1" fontSize="6xl" >Projects</Text>
         <SimpleGrid m={5} w={100} bgColor={'white'} spacing={10} templateColumns='repeat(auto-fill, minmax(90vw, 1fr))'>
       <Card>
         <CardHeader>

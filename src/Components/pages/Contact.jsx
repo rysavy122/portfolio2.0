@@ -11,8 +11,8 @@ const Contact = () => {
   return (
     <div>
       <Box p={5}>
+      <div id="contact-page">
         <Text mb={20} fontSize="6xl" >Hit me up !</Text>
-        <div id="contact-page">
           <Input mb={3} borderRadius={1} variant='outline' placeholder='Whats youre name ? ' />
           <Input required={true} type={'email'} mb={3} borderRadius={1} variant='outline' placeholder='Whats youre email ?' />
 
