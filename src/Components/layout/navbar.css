@@ -28,8 +28,6 @@
     background-color: #F9F003;
     background-color: yellow;
     margin-right:16vw;
-    margin-bottom:5vh;
-    margin-top:5vh;
     justify-content: space-around;
 
 }
@@ -85,6 +83,8 @@
         display: flex;
         justify-content: space-around;
         margin:0px;
+        margin:auto;
+        margin-left:-3vw;
         z-index: 10;
     }
 
@@ -95,7 +95,7 @@
         background-color: #F9F003;
         position: absolute;
         top:-8vh;
-        right:12vw;
+        right:15vw;
     
     }
     #logo1 h1{
@@ -127,8 +127,8 @@
 
 #external-links svg{
     margin:20px;
-
 }
+
 
 #external-links svg:hover{
     cursor: pointer;

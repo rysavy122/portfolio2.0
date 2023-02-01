@@ -86,7 +86,7 @@ const Home = () => {
       },
       "@media (max-width: 568px)": {
         height: '100vh',
-        height: isVisible ? "250vh" : "350vh",
+        height: isVisible ? "250vh" : "370vh",
         transform: `translateY(${isVisible ? '-70vh' : '0'})`,
         transition: 'transform 500ms ease-in-out'
       },
@@ -115,7 +115,7 @@ const Home = () => {
           My Name is <span className="span">Denis Rysavy</span>, I am 27 years old, living in Bremen, Germany 🇩🇪.
           <br/>
           <br />
-          <br /> I am a <span className='span'>FullStack WebDeveloper ! 💻 </span> 
+          <br /> I am a <span className='span'>full-stack developer ... 💻 </span> 
           <br />
           <br />
           <br />
@@ -128,35 +128,34 @@ const Home = () => {
           <br />
           <br />
           <br />
+          <Text>Thank you for visiting my portfolio ! <br/><br/>🙏</Text>
           </Text>
-          <Text>Thank you for visiting my online Portfolio ! 🙏</Text>
 
 
 
-          <Text className="text-values2">Core values</Text>
+          <Text className="text-values2">My key values</Text>
           <Box className='box-values'>
           <Box className="box-values2-header">
           <h1>Responsiveness</h1>
             <SlSizeActual />
               <p>Mobile, tablet, or desktop ? Doesnt matter, the Design will adjust to all Screensizes.</p>
-              <br/>
           </Box>
           <Box className="box-values2-header">
           <h1>Pageload</h1>
             <SlSpeedometer/>
               <p>Keeping pageload low not only makes the page faster, its also good for SEO. Time is money ...</p>
-              <br/>
           </Box>
           <Box className="box-values2-header">
           <h1>Security</h1>
             <SlLock/>
+            <p>Keeping your data protected. It is very important to be safe out there.</p>
           </Box>
           <Box className="box-values2-header">
           <h1>Customization</h1>
             <SlEqualizer />
+          <p>Everything is 100% handmade, customizable based on youre needs ...</p>
             </Box>
-          </Box>  
-          
+          </Box>         
       </Box>
 
 
@@ -197,7 +196,7 @@ const Home = () => {
                 <TbEqual />
                 < MdOutlineAttachMoney/>
               </Flex>
-              <Text p={2} bgColor={'yellow'}>Lightweight and performant approach to keep the Pageload low. Becaurse time is money . . . </Text>
+              <Text p={2} bgColor={'yellow'}>Lightweight and performant approach to keep the Pageload low. Because time is money . . . </Text>
             </Box>
             <Box className="box-values">
               <Box className="box-values-header">
@@ -229,8 +228,6 @@ const Home = () => {
               </Flex>
               <Text p={2} bgColor={'yellow'}>Need a special feature or design ? You name it, I make it. Fully customizable to your needs...</Text>
             </Box>
-
-        
       </Box>
     </Box>
   </>

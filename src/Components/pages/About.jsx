@@ -15,31 +15,12 @@ import VisualStudioIcon from '../assets/icons/TechnologiesIcons/VisualStudioIcon
 
 import { 
   SlEye,
-  SlArrowDown, 
-  SlEmotsmile, 
-  SlEqualizer, 
   SlHeart, 
-  SlMagicWand,
-  SlScreenDesktop, 
-  SlLike, 
-  SlScreenSmartphone, 
-  SlScreenTablet, 
-  SlSpeedometer, 
-  SlSizeActual, 
-  SlRocket, 
   SlBubbles, 
-  SlBulb, 
-  SlNote, 
-  SlCheck, 
-  SlLock  } from 'react-icons/sl';
+  } from 'react-icons/sl';
 import { 
-  BsCodeSlash,
-  BsHeart,
   BsBraces, 
-  BsPlus, 
-  BsCurrencyDollar, 
-  BsEmojiHeartEyes,
-  BsDash } from 'react-icons/bs';
+} from 'react-icons/bs';
 
 
 import './pages.css';
@@ -51,12 +32,17 @@ const About = () => {
   return (
     <>
       <Box id='about-page'>
-        <Text w={'100vw'} mb={20} mt={20} fontSize="6xl" >Who I am ... </Text>
+        <Text id='about-h1' fontSize="6xl" >Who I am ... </Text>
         <img src={rysavy}></img>
         <Text 
         id='about-text' 
         fontSize="1xl"
-      /*  sx={{letterSpacing:'1px'}} */ >Hallo mein Name ist Denis Rysavy Quod quae nulla autem quo aperiam possimus atque? Itaque eos nobis error in distinctio similique laboriosam maiores nulla dolorem illum! Quo facilis quaerat qui doloribus harum deleniti officia numquam? Sint, numquam necessitatibus a fugit blanditiis ea rem cupiditate laboriosam minima neque dolorum. Praesentium, error ab necessitatibus nulla officia provident voluptates in recusandae, debitis perferendis earum, mollitia voluptatibus autem neque vitae eius ducimus veritatis ipsam omnis molestiae! Expedita corrupti autem beatae dolorem reprehenderit consequatur modi corporis dolor laudantium? Dicta rem nulla, ducimus consectetur magnam, neque alias eum ab libero error saepe qui hic? </Text>
+      /*  sx={{letterSpacing:'1px'}} */ >... I am <span>Denis Rysavy</span>.<br />A 27 years old <span>full-stack developer</span> living in Bremen, Germany. I love music, art in general, cats, science, technology, math, coding and much more. As a full-stack <span>software developer</span> I am capable of covering the full range of technology between <span>frontend and backend development</span>. I have a big passion for UI and UX principles and love clean and user friendly layouts. But I am also capable of managing server-side operations, for example setting up and running different kinds of servers, creating and connecting to different kinds of databases to handle a variety of tasks from password protected login and signup functionality to shopping systems or user dashboards where the user can create data, read data, update data or delete data (CRUD). And much more !
+      <br />
+      <br />
+      As a Programmer I am a problem solver, tell me whats the issue and with my <span>5 years of Experience</span> I am sure I will find a solution !
+      </Text>
+      
       </Box>
       <Text className="text-values3">My Qualities</Text>
           <Box className='box-values'>
