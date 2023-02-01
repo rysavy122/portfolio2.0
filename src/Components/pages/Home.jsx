@@ -1,10 +1,69 @@
 import React, { useState } from 'react';
 import { Box, Flex, Text } from '@chakra-ui/layout';
-import { SlArrowDown, SlEmotsmile, SlEqualizer, SlHeart, SlMagicWand,SlScreenDesktop, SlLike, SlScreenSmartphone, SlScreenTablet, SlSpeedometer, SlSizeActual, SlRocket, SlBubbles, SlBulb, SlNote, SlCheck, SlLock  } from 'react-icons/sl';
-import { BsCodeSlash, BsPlus, BsCurrencyDollar, BsDash } from 'react-icons/bs';
-import { TbEqual, TbHeartHandshake, TbRocket } from 'react-icons/tb';
-import {IoIosDesktop, IoIosPhonePortrait, IoIosLaptop,IoIosTabletLandscape,IoIosAdd,IoIosCheckmark} from 'react-icons/io';
-import {MdMoreTime, MdOutlineWeb, MdOutlineDesignServices,MdDesktopMac,MdTabletMac,MdPhoneIphone, MdCheck, MdLightbulbOutline, MdOutlineForum, MdOutlineThumbUpAlt,MdOutlineArrowForward, MdInsertEmoticon, MdOutlineHourglassDisabled, MdOutlineHttp, MdOutlineHourglassEmpty, MdOutlineSecurity, MdWarningAmber} from 'react-icons/md';
+import {
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
+} from '@chakra-ui/react'
+import { 
+  SlEye,
+  SlArrowDown, 
+  SlEmotsmile, 
+  SlEqualizer, 
+  SlHeart, 
+  SlMagicWand,
+  SlScreenDesktop, 
+  SlLike, 
+  SlScreenSmartphone, 
+  SlScreenTablet, 
+  SlSpeedometer, 
+  SlSizeActual, 
+  SlRocket, 
+  SlBubbles, 
+  SlBulb, 
+  SlNote, 
+  SlCheck, 
+  SlLock  } from 'react-icons/sl';
+import { 
+  BsCodeSlash,
+  BsHeart,
+  BsBraces, 
+  BsPlus, 
+  BsCurrencyDollar, 
+  BsEmojiHeartEyes,
+  BsDash } from 'react-icons/bs';
+import { 
+  TbEqual, 
+  TbHeartHandshake, 
+  TbRocket } from 'react-icons/tb';
+import {
+  IoIosDesktop, 
+  IoIosPhonePortrait, 
+  IoIosLaptop,
+  IoIosTabletLandscape,
+  IoIosAdd,
+  IoIosCheckmark} from 'react-icons/io';
+import {
+  MdMoreTime, 
+  MdOutlineWeb, 
+  MdOutlineDesignServices,
+  MdDesktopMac,
+  MdTabletMac,
+  MdPhoneIphone, 
+  MdCheck, 
+  MdLightbulbOutline, 
+  MdOutlineForum,
+  MdOutlineThumbUpAlt,
+  MdOutlineArrowForward, 
+  MdInsertEmoticon, 
+  MdOutlineHourglassDisabled, 
+  MdOutlineHttp, 
+  MdOutlineHourglassEmpty, 
+  MdOutlineSecurity, 
+  MdWarningAmber, 
+  MdOutlineAttachMoney} from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import { transform } from 'framer-motion';
 
@@ -27,7 +86,8 @@ const Home = () => {
       },
       "@media (max-width: 568px)": {
         height: '100vh',
-        transform: `translateY(${isVisible ? '-65vh' : '0'})`,
+        height: isVisible ? "250vh" : "350vh",
+        transform: `translateY(${isVisible ? '-70vh' : '0'})`,
         transition: 'transform 500ms ease-in-out'
       },
     }}
@@ -70,6 +130,44 @@ const Home = () => {
           <br />
           </Text>
           <Text>Thank you for visiting my online Portfolio ! 🙏</Text>
+
+
+
+          <Text className="text-values2">Core values</Text>
+          <Box className='box-values'>
+          <Box className="box-values2-header">
+          <h1>Responsiveness</h1>
+            <SlSizeActual />
+              <p>Mobile, tablet, or desktop ? Doesnt matter, the Design will adjust to all Screensizes.</p>
+              <br/>
+          </Box>
+          <Box className="box-values2-header">
+          <h1>Pageload</h1>
+            <SlSpeedometer/>
+              <p>Keeping pageload low not only makes the page faster, its also good for SEO. Time is money ...</p>
+              <br/>
+          </Box>
+          <Box className="box-values2-header">
+          <h1>Security</h1>
+            <SlLock/>
+          </Box>
+          <Box className="box-values2-header">
+          <h1>Customization</h1>
+            <SlEqualizer />
+            </Box>
+          </Box>  
+          
+      </Box>
+
+
+
+
+      <Box
+          style={{ 
+          transform: `opacity(${isVisible ? '1' : '0'})`,
+          transition: 'transform 500ms ease-in-out',
+          display: isVisible ? "none" : "block"
+        }}>
           <Text className="text-values">My key values</Text>
             <Box className="box-values">
               <Box className="box-values-header">
@@ -90,14 +188,14 @@ const Home = () => {
             <Box className="box-values">
               <Box className="box-values-header">
               <SlSpeedometer/>
-                <h1>Fast Pageload times</h1>
+                <h1>Fast Pageload speed</h1>
               </Box>
               <Flex className="responsive">
                 <MdOutlineWeb />
-                <BsDash />
-                <MdOutlineHourglassEmpty/>
+                <BsPlus />
+                <MdMoreTime/>
                 <TbEqual />
-                <MdMoreTime />
+                < MdOutlineAttachMoney/>
               </Flex>
               <Text p={2} bgColor={'yellow'}>Lightweight and performant approach to keep the Pageload low. Becaurse time is money . . . </Text>
             </Box>
@@ -131,14 +229,10 @@ const Home = () => {
               </Flex>
               <Text p={2} bgColor={'yellow'}>Need a special feature or design ? You name it, I make it. Fully customizable to your needs...</Text>
             </Box>
+
+        
       </Box>
     </Box>
-{/*       <Flex id="icon-flexbox" >
-        <BsCodeSlash />
-          <SlHeart />
-          <SlLike />
-          <SlMagicWand />
-      </Flex> */}
   </>
   );
 };

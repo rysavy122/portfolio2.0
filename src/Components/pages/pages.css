@@ -38,9 +38,21 @@
 
   }
 
+  .text-values3{
+    margin-top: 15vh;
+    font-size: 3rem;
+    margin-left:-25vw;
+  }
   .text-values{
     margin-top: 15vh;
     font-size: 3rem;
+    margin-left:-18vw;
+  }
+  .text-values2{
+    margin-top: 15vh;
+    font-size: 3rem;
+    margin-left:-5vw;
+
   }
 
 
@@ -49,7 +61,7 @@
     border-left:0px;
     border-right:0px;
     margin:auto;
-    width:99.5vw;
+    width:100vw;
     margin-left:0vw;
     margin-bottom: 10vh;
     margin-top: 5vh;
@@ -64,21 +76,44 @@
     margin-bottom: 15px;
     background-color: yellow;
     padding:2vh;
-    border-bottom:1px solid black;
+
+  }
+
+  .box-values2-header h1{
+    font-size: 2em;
+    background-color: yellow;
+    padding:2vh;
+    margin-bottom: -20px;;
 
   }
 
 
+  .box-values2-header  svg{
+    padding-top: -15px;
+    margin-bottom: 5vh;
+    margin-top: 25px;
+    background-color: yellow;
+    height: 3rem;
+    width:3rem;
+  }
   .box-values-header  svg{
-    padding-top: 15px;
+    margin-top: 25px;
     background-color: yellow;
     height: 3rem;
     width:3rem;
 
   }
+  .box-values2-header{
+    background-color: yellow;
+    border:1px solid black;
+    margin-bottom:5vh;
+  }
+
   .box-values-header{
     background-color: yellow;
+    border:1px solid black;
   }
+  
 
 #contact-page svg{
     margin: 10px auto;
@@ -118,9 +153,8 @@
     font-size: 4rem;
     margin-left: 0vw;
   }
-  #container-home{
-    height:350vh;
-  }
+
+
 
   #spacer{
     height:30vh;

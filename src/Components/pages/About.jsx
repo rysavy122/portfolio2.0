@@ -13,6 +13,35 @@ import GitIcon from '../assets/icons/TechnologiesIcons/GitIcon';
 import MongoDbIcon from '../assets/icons/TechnologiesIcons/MongoDbIcon';
 import VisualStudioIcon from '../assets/icons/TechnologiesIcons/VisualStudioIcon';
 
+import { 
+  SlEye,
+  SlArrowDown, 
+  SlEmotsmile, 
+  SlEqualizer, 
+  SlHeart, 
+  SlMagicWand,
+  SlScreenDesktop, 
+  SlLike, 
+  SlScreenSmartphone, 
+  SlScreenTablet, 
+  SlSpeedometer, 
+  SlSizeActual, 
+  SlRocket, 
+  SlBubbles, 
+  SlBulb, 
+  SlNote, 
+  SlCheck, 
+  SlLock  } from 'react-icons/sl';
+import { 
+  BsCodeSlash,
+  BsHeart,
+  BsBraces, 
+  BsPlus, 
+  BsCurrencyDollar, 
+  BsEmojiHeartEyes,
+  BsDash } from 'react-icons/bs';
+
+
 import './pages.css';
 
 
@@ -29,6 +58,25 @@ const About = () => {
         fontSize="1xl"
       /*  sx={{letterSpacing:'1px'}} */ >Hallo mein Name ist Denis Rysavy Quod quae nulla autem quo aperiam possimus atque? Itaque eos nobis error in distinctio similique laboriosam maiores nulla dolorem illum! Quo facilis quaerat qui doloribus harum deleniti officia numquam? Sint, numquam necessitatibus a fugit blanditiis ea rem cupiditate laboriosam minima neque dolorum. Praesentium, error ab necessitatibus nulla officia provident voluptates in recusandae, debitis perferendis earum, mollitia voluptatibus autem neque vitae eius ducimus veritatis ipsam omnis molestiae! Expedita corrupti autem beatae dolorem reprehenderit consequatur modi corporis dolor laudantium? Dicta rem nulla, ducimus consectetur magnam, neque alias eum ab libero error saepe qui hic? </Text>
       </Box>
+      <Text className="text-values3">My Qualities</Text>
+          <Box className='box-values'>
+          <Box className="box-values-header">
+            <SlHeart />
+              <h1>Made with love</h1>
+          </Box>
+          <Box className="box-values-header">
+            <BsBraces/>
+              <h1>Passion for coding</h1>
+          </Box>
+          <Box className="box-values-header">
+            <SlBubbles/>
+              <h1>Open for Dialogues</h1>
+          </Box>
+          <Box className="box-values-header">
+            <SlEye />
+              <h1>Eye for the Detail</h1>
+            </Box>
+          </Box>  
 
       <Text w={'100vw'} mb={20} mt={20} fontSize="6xl" >My Skillset</Text>
       <Box  className="tech-stack-container" bg={'white'} > 
