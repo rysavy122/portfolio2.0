@@ -56,7 +56,7 @@ const Home = () => {
       },
       "@media (max-width: 568px)": {
         height: '100vh',
-        height: isVisible ? "278vh" : "370vh",
+        height: isVisible ? "300vh" : "370vh",
         transform: `translateY(${isVisible ? '-60vh' : '0'})`,
         transition: 'transform 500ms ease-in-out'
       },
@@ -100,7 +100,7 @@ const Home = () => {
           <Box className="box-values2-header">
           <h1>Pageload</h1>
             <SlSpeedometer/>
-              <p>Keeping pageload low not only makes the page faster, it is also good for SEO. Time is money ...</p>
+              <p>Keeping the pageload low not only makes the page faster, it is also good for SEO. Time is money ...</p>
           </Box>
           <Box className="box-values2-header">
           <h1>Security</h1>
@@ -108,7 +108,7 @@ const Home = () => {
             <p>Keeping your data protected. It is very important to be safe out there.</p>
           </Box>
           <Box className="box-values2-header">
-          <h1>Customization</h1>
+          <h1>Customazibility</h1>
             <SlEqualizer />
           <p>Everything is 100% handmade, customizable based on youre needs ...</p>
             </Box>
@@ -135,12 +135,12 @@ const Home = () => {
                 <TbEqual />
                 <MdCheck/>
               </Flex>
-              <Text p={2} bgColor={'yellow'}>Smartphone, Tablet, Laptop or Desktop ? 100% flexible Screensizes, fits any Device !</Text>
+              <Text borderBottom={'1px'} p={2} bgColor={'yellow'}>Smartphone, Tablet, Laptop or Desktop ? 100% flexible Screensizes, fits any Device !</Text>
             </Box>
             <Box className="box-values">
               <Box className="box-values-header">
               <SlSpeedometer/>
-                <h1>Fast Pageload speed</h1>
+                <h1>Fast pageload speeds</h1>
               </Box>
               <Flex className="responsive">
                 <MdOutlineWeb />
@@ -149,7 +149,7 @@ const Home = () => {
                 <TbEqual />
                 < MdOutlineAttachMoney/>
               </Flex>
-              <Text p={2} bgColor={'yellow'}>Lightweight and performant approach to keep the Pageload low. Because time is money . . . </Text>
+              <Text borderBottom='1px' p={2} bgColor={'yellow'}>Keeping the pageload times low has many advantages. Remember, time is money... </Text>
             </Box>
             <Box className="box-values">
               <Box className="box-values-header">
@@ -163,7 +163,7 @@ const Home = () => {
                 <TbEqual />
                 <MdWarningAmber />
               </Flex>
-              <Text p={2} bgColor={'yellow'}>Internet Security is a huge topic. It is very important to be safe out there.</Text>
+              <Text borderBottom={'1px'} p={2} bgColor={'yellow'}>Internet Security is a huge topic. It is very important to be safe out there.</Text>
             </Box>
             <Box className="box-values">
               <Box className="box-values-header">
@@ -179,7 +179,7 @@ const Home = () => {
                 <TbEqual />
                 <MdInsertEmoticon />
               </Flex>
-              <Text p={2} bgColor={'yellow'}>Need a special feature or design ? You name it, I make it. Fully customizable to your needs...</Text>
+              <Text borderBottom={'1px'} p={2} bgColor={'yellow'}>Need a special feature or design ? You name it, I make it. Fully customizable to your needs...</Text>
             </Box>
       </Box>
     </Box>
