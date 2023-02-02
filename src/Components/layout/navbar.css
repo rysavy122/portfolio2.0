@@ -40,7 +40,7 @@
     background-color: #F9F003;
     width:110vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin:0px;
     margin-left: -10vw;
     z-index: 10;
@@ -137,26 +137,29 @@
     margin:-10px;
     margin-left:3vw;
     height:55px;
-    width:30px;
+    width:25px;
 }
 
 #sidenav #toggle-themes-btn svg{
-    margin: 0px 0px 0px 0px;
-    height:30px;
+    margin: 0px;
+    padding: 0px;
+    height:20px;
     
 }
 
 #toggle-themes-btn {
-    position: fixed;
-    top:5px;
-    right:44vw;
-    padding:0px;
     border-radius: 50%;
+    width: 30px;
+    margin: 0.5vh -14vw 0px -10px;
+    min-width: 20px;
+    height: 30px;
 } 
  
 #toggle-themes-btn span {
-    border:0px;
-    width:20px;
-    margin:0px;
+    width: 30px;
+    margin: auto;
+    border: 0px;
+    padding: 4px;
+
     
 }

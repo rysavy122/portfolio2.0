@@ -19,12 +19,12 @@ import '../layout/navbar.css';
 const MainNavigation = () => {
   return (
     <>
-    <Box  id={'sidenav'}>
+    <Box id={'sidenav'}>
         <NavLink as={NavLink} to="/" className="link"><HomeIcon/></NavLink>
         <NavLink as={NavLink} to ="/About" className="link" ><AboutIcon /></NavLink>
         <NavLink as={NavLink} to="/Projects" className="link" ><ProjectIcon/></NavLink>
         <NavLink as={NavLink} to="/Contact" className="link" ><ContactIcon/></NavLink>
-        <Button _hover={{bg:"yellow", color:"black", border:"1px solid black"}} color={'white'} bg={'black'} id='toggle-themes-btn' leftIcon={<MdOutlineLightMode  />} /* colorScheme='white'  */variant='outline'></Button>
+        <Button _hover={{bg:"yellow", color:"black", border:"1px solid black"}} p={'0px 0px'} color={'white'} bg={'black'} id='toggle-themes-btn' leftIcon={<MdOutlineLightMode  />} /* colorScheme='white'  */variant='outline'></Button>
     </Box>  
     </>
     )
