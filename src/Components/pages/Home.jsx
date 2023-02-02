@@ -62,7 +62,7 @@ const Home = () => {
       },
     }}
      > <Link to={'/contact'}>
-      <Text  pb={4} id='hi'>Hi, nice to meet you !</Text>
+      <Text pb={4} id='hi'>Hi, nice to meet you !</Text>
       </Link>
       <SlArrowDown
       style={{ 
@@ -85,10 +85,10 @@ const Home = () => {
             <Text p={2} >I am a <span className='span'>full stack developer... </span> 💻 </Text>
           </Box>
           <Box mb={16} bg={'white'} >
-          <Text p={2} bg={'white'}><span>Welcome </span>to my portfolio website ! <br/>🙏</Text>
+          <Text p={2} bg={'white'}><span>Welcome </span>to my portfolio website ! <br/>✌️</Text>
             <Text>On this Website you can <Link id='about-link' color={'yellow'} to={'/projects'}><span>review my work</span></Link> and <Link id='about-link' color={'yellow'} to={'/contact'}><span>contact me</span></Link> if you need help with anything Software related.</Text>
           </Box>
-          <Text mb={16} p={2} bg={'white'} >Want to find out a bit more <Link id='about-link' color={'yellow'} to={'/about'}><span>About me</span> ? </Link></Text>
+          <Text mb={16} p={2} bg={'white'} >Find out more <Link id='about-link' color={'yellow'} to={'/about'}><span>About me</span>.</Link></Text>
           <Text p={2} bg={'white'}><span>Thank you </span>for visiting my portfolio ! <br/>🙏</Text>
           </Box>
           <Text className="text-values2">My key values</Text>

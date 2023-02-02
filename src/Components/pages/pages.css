@@ -4,10 +4,10 @@
     margin-top: 70px;
     text-align: justify;
     line-height: 1.8;
-    background-color: white;
     margin-top:15vh;
     padding-right: 3%;
 }
+
 
 #contact-h1{
   margin:50px;
@@ -16,6 +16,7 @@
   width:100vw;
   margin-left:-0vw;
   background-color: white;
+  height:65px;
 }
 #about-h1{
   margin:50px;
@@ -23,6 +24,7 @@
   margin-left:-8vw;
   margin-bottom: 7vh;
   background-color: white;
+  height:65px;
 }
 #projects-h1{
   margin:50px;
@@ -30,6 +32,8 @@
   margin-left:-8vw;
   margin-bottom: 7vh;
   background-color: white;
+  height:65px;
+
 }
 
 
@@ -163,7 +167,7 @@
 }
 #contact-body{
   background-color: white;
-  margin-bottom: 5vh;
+  margin-bottom: 15vh;
 }
 
 .responsive{

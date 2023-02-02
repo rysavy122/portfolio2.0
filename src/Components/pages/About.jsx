@@ -37,12 +37,16 @@ const About = () => {
         <Text 
         className='about-text' 
         fontSize="1xl"
-        ><Text fontSize={'3xl'}>... I am <span style={{fontSize:"1em"}}>Denis Rysavy</span>.</Text><br />A 27 years old <span>full stack developer</span> living in <span>Bremen, Germany</span>. 🇩🇪 <br/><br />
-        I love music, art in general, cats, science, technology, math, coding and much more. 
-        As a full stack <span>software developer</span> I am capable of covering the full range of technology between <span>frontend and backend </span>development. 
+        >
+       <Text w={'100vw'} mb={'7vh'} bg={'white'} fontSize={'3xl'}>... I am <span style={{fontSize:"1em"}}>Denis Rysavy</span>.</Text>
+       <Text pr={4} w={'95vw'} mb={'7vh'} bg={'white'} >A 27 years old <span>fullstack developer</span> living in <span>Bremen, Germany</span>. 🇩🇪 </Text>
+       <Text pr={4} w={'95vw'} mb={'7vh'} bg={'white'}>I love <b>music</b>, <b>art</b> in general, <b>cats</b>, <b>science</b>, <b>technology</b>, <b>math</b>, <b>coding</b> and much more.</Text>
+       <Text pr={4} w={'95vw'} mb={'7vh'} bg={'white'} >
+        As a fullstack software developer I am capable of covering the full range of technology between <span>frontend and backend </span>development. 
         I have a big passion for <span>UI & UX </span>principles and love clean and user friendly layouts. 
         I am also capable of handling <span>server side </span>operations, for example setting up and running different kinds of servers, creating and connecting to different kinds of <span>databases</span> to handle a variety of tasks from password protected login and signup functionality to shopping systems or user dashboards where the user can create data, read data, update data or delete data, so called <span>CRUD</span> operations, just to name a few.</Text>
-      <Text className='about-text'>As a <span>Programmer</span> I am a <span>problem solver</span>, tell me whats the issue and I will find a solution !</Text>
+      <Text pr={4} w={'95vw'} mb={'7vh'} bg={'white'} >As a Programmer I am a <span>problem solver</span>, tell me whats the issue and I will find a solution !</Text>
+      </Text>
       <br/>
       
       </Box>

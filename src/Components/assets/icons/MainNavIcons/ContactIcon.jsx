@@ -1,12 +1,12 @@
 import React from 'react'
-import { SlBubble } from "react-icons/sl";
+import { SlEnvolope } from "react-icons/sl";
 
 
 
 
 const ContactIcon = () => {
   return (
-    <SlBubble/>
+    <SlEnvolope/>
   )
 }
 

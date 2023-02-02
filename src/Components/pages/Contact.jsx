@@ -26,9 +26,9 @@ const Contact = () => {
             bg={'yellow'}  
             type='submit'><SlPaperPlane style={{margin:'1px'}}/>
             </Button>
-            <Flex alignItems='center' justifyContent="space-around" mt={10}> 
+            <Flex alignItems='center' justifyContent="space-around" mt={20}> 
               <a href="mailto:rysavydenis3@gmail.com?subject=Hello&body=Hello,%20can%20we%20chat?" target={'_blank'}>
-                  <GmailIcon />
+                  <GmailIcon id="gmail-icon" />
                   <Text ml={2}>Write me an email</Text>
               </a>
               <a href="https://wa.me/+491630100503?text=Hello,%20can%20we%20chat?" target={'_blank'}>
