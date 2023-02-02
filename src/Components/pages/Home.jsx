@@ -81,13 +81,14 @@ const Home = () => {
         }}>
         <Box id="intro">
           <Box mb={16} bg={'white'}>
-            <Text>My Name is <span className="span">Denis Rysavy</span>,</Text>
+            <Text>My Name is <Link to="/about"><span className="span">Denis Rysavy</span></Link>,</Text>
             <Text p={2} >I am a <span className='span'>full stack developer... </span> 💻 </Text>
           </Box>
           <Box mb={16} bg={'white'} >
-            <Text>On this Website you can <span>review my work</span> and <span>contact me</span> if you need help with anything Software related.</Text>
+          <Text p={2} bg={'white'}><span>Welcome </span>to my portfolio website ! <br/>🙏</Text>
+            <Text>On this Website you can <Link id='about-link' color={'yellow'} to={'/projects'}><span>review my work</span></Link> and <Link id='about-link' color={'yellow'} to={'/contact'}><span>contact me</span></Link> if you need help with anything Software related.</Text>
           </Box>
-          <Text mb={16} p={2} bg={'white'} >Enjoy exploring ! → <Link id='about-link' color={'yellow'} to={'/about'}><span>About me</span></Link></Text>
+          <Text mb={16} p={2} bg={'white'} >Want to find out a bit more <Link id='about-link' color={'yellow'} to={'/about'}><span>About me</span> ? </Link></Text>
           <Text p={2} bg={'white'}><span>Thank you </span>for visiting my portfolio ! <br/>🙏</Text>
           </Box>
           <Text className="text-values2">My key values</Text>
@@ -100,7 +101,7 @@ const Home = () => {
           <Box className="box-values2-header">
           <h1>Pageload</h1>
             <SlSpeedometer/>
-              <p>Keeping the pageload low not only makes the page faster, it is also good for SEO. Time is money ...</p>
+              <p>Low pageload not only makes the page faster, it is also good for SEO. Time is money ...</p>
           </Box>
           <Box className="box-values2-header">
           <h1>Security</h1>
