@@ -9,10 +9,9 @@ import WhatsAppIcon from '../assets/icons/Contacticons/WhatsAppIcon';
 
 const Contact = () => {
   return (
-    <div>
-      <Box p={5}>
-      <div id="contact-page">
+    <div id='contact-page'>
         <Text id="contact-h1" fontSize="6xl" >Hit me up !</Text>
+        <div id="contact-body">
           <Input mb={3} borderRadius={1} variant='outline' placeholder='Whats youre name ? ' />
           <Input required={true} type={'email'} mb={3} borderRadius={1} variant='outline' placeholder='Whats youre email ?' />
 
@@ -37,9 +36,8 @@ const Contact = () => {
                 <Text ml={2}>Write me on WhatsApp</Text>
               </a>
               </Flex>
-            </div>
-      </Box> 
-   </div>
+          </div>
+      </div>
   )
 }
 

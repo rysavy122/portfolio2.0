@@ -4,7 +4,6 @@ import { SlUser } from "react-icons/sl";
 
 const AboutIcon = () => {
   return (
-
     <SlUser/>
   )
 }

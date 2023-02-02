@@ -1,14 +1,19 @@
 import React from 'react';
 import MainNavigation from '../navigation/MainNavigation';
-import '../layout/navbar.css';
+import {MdOutlineLightMode} from 'react-icons/md';
+import { Box } from '@chakra-ui/react';
 import { position } from '@chakra-ui/react';
+
+import '../layout/navbar.css';
+
+
 
 
 const Navbar = () => {
   return (
     <>
     <MainNavigation  />
-    <div style={{height:"200px"}}></div>
+    <Box h={'200px'} />
     </>
   )
 }

@@ -11,8 +11,8 @@ const Projects = () => {
   return (
     <div id='project-page'>
       <Text id="projects-h1" fontSize="6xl" >Projects</Text>
-        <SimpleGrid m={5} w={100} bgColor={'white'} spacing={10} templateColumns='repeat(auto-fill, minmax(90vw, 1fr))'>
-      <Card>
+        <SimpleGrid w={100} spacing={20} templateColumns='repeat(auto-fill, minmax(100vw, 1fr))'>
+      <Card bg={'white'}>
         <CardHeader>
           <Heading size='md'> First Project</Heading>
         </CardHeader>
@@ -33,7 +33,7 @@ const Projects = () => {
           </Link>         
         </CardFooter>
       </Card>
-      <Card>
+      <Card bg={'white'}>
         <CardHeader>
           <Heading size='md'> Second Project</Heading>
         </CardHeader>
@@ -54,7 +54,7 @@ const Projects = () => {
           </Link>         
         </CardFooter>
       </Card>
-      <Card>
+      <Card bg={'white'}>
         <CardHeader>
           <Heading size='md'> Third Project</Heading>
         </CardHeader>
@@ -75,7 +75,7 @@ const Projects = () => {
           </Link>         
         </CardFooter>
       </Card>
-      <Card>
+      <Card bg={'white'}>
         <CardHeader>
           <Heading size='md'> Third Project</Heading>
         </CardHeader>
@@ -97,7 +97,7 @@ const Projects = () => {
         </CardFooter>
       </Card>
     </SimpleGrid>
-    </div>
+   </div>
   )
 }
 

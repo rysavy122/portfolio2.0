@@ -1,27 +1,35 @@
-#about-text{
-    width:90vw;
+.about-text{
+    width:95vw;
     margin:4%;
     margin-top: 70px;
     text-align: justify;
-    line-height: 2;
+    line-height: 1.8;
     background-color: white;
     margin-top:15vh;
+    padding-right: 3%;
 }
 
 #contact-h1{
-  margin-bottom: 5vh;
+  margin:50px;
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+  width:100vw;
+  margin-left:-0vw;
+  background-color: white;
 }
 #about-h1{
   margin:50px;
-  margin-top: 15px;
+  margin-top: 7vh;
   margin-left:-8vw;
-  margin-bottom: 5vh;
+  margin-bottom: 7vh;
+  background-color: white;
 }
 #projects-h1{
   margin:50px;
-  margin-top: 15px;
+  margin-top: 7vh;
   margin-left:-8vw;
-  margin-bottom: 5vh;
+  margin-bottom: 7vh;
+  background-color: white;
 }
 
 
@@ -48,6 +56,8 @@
     animation: fadeIn 2s ease-in 1 forwards;
     animation-delay: 1s;
     margin-left: 48vw;
+    height:1.5rem;
+    width:1.5rem;
 
   }
 
@@ -55,22 +65,27 @@
     margin-top: 15vh;
     font-size: 3rem;
     margin-left:-25vw;
+    margin-bottom: 11vh;
+    background-color: white;
   }
   .text-values{
     margin-top: 15vh;
     font-size: 3rem;
+    margin-bottom: 11vh;
     margin-left:-18vw;
+    background-color: white;
   }
   .text-values2{
     margin-top: 15vh;
+    margin-bottom: 10vh;
     font-size: 3rem;
     margin-left:-5vw;
+    background-color: white;
 
   }
 
 
   .box-values{
-    border:1px solid black;
     border-left:0px;
     border-right:0px;
     margin:auto;
@@ -123,7 +138,7 @@
   .box-values2-header{
     background-color: yellow;
     border:1px solid black;
-    margin-bottom:5vh;
+    margin-bottom:11vh;
   }
 
   .box-values2-header p{
@@ -143,46 +158,57 @@
 }
 
 #contact-page{
-    background-color: white;
-    margin-right: 15vw;
+    width:100vw;
+    padding:auto;
+}
+#contact-body{
+  background-color: white;
+  margin-bottom: 5vh;
 }
 
 .responsive{
-  padding:20px;
+  padding:auto;
+  margin:auto;
   border-bottom:1px solid black;
+  background-color: white;
+
 }
 
 .responsive svg{
-  height:50px;
+  height:60px;
   width:50px;
   margin:40px auto;
   padding-left: -10px;
   padding-right: -10px;
 }
 
-#project-page svg{
-    color: black;
-    height:40px;
-}
-#hi {
+  #project-page svg{
+      color: black;
+      height:40px;
+  }
+
+  #project-page{
+    width:120vw;
+    padding:auto;
+    margin-bottom: 9vh;
+  }
+  #hi{
     opacity: 0;
     animation: slideIn 1s ease-out 1 forwards;
     transform: translateX(-30%);
-    margin-top: 20vh;
+    margin-top: 15vh;
     margin-bottom:5vh;
+    line-height: 4.5rem;
     width:100vw;
     font-size: 4rem;
+    background-color: white;
   }
-
-
 
   #spacer{
     height:30vh;
   }
 
   #box-hidden{
-/*     border: 1px solid #F9f003;
-    background-color: #f9f10389; */
     height:67vh;
     width:90%;
     margin-left: 0vw;
@@ -192,19 +218,22 @@
     font-weight: bold;
     font-size: 1.4rem;
   }
+
+  span{
+    font-weight: bold;
+    font-size: 1.4rem;
+    border-bottom: 5px solid yellow;
+  }
+
   #intro{
     font-size: 1rem;
-    width:90vw;
+    width:100vw;
     text-align: center;
-    margin-top: 25px;
-    margin-left: 5vw;
   }
   .tech-stack-container{
     margin: auto;
     margin-right:25vw ;
   }
-
-
 
   
   @keyframes slideIn {
@@ -228,19 +257,15 @@
   }
 
 
-  
-
 @media screen and (min-width:768px) {
 
     #more {
     margin:auto;
-
     }
     #spacer{
     height:35vh;
     }
     #hi {
-    width:100vw;
     font-size: 9em;
     margin-left: -17vw;
     margin-top: 25vh;
@@ -249,7 +274,6 @@
     #intro{
     font-size: 1.4rem;
     width:60vw;
-    text-align: center;
     margin:auto;
     margin-top: 60px;
     margin-left:4vw;
@@ -260,8 +284,6 @@
     font-size: 1.9rem;
     }
     #box-hidden{
-/*  border: 1px solid #F9f003;
-    background-color: #f9f10389; */
     height:60vh;
     width:107%;
     margin-left: -0vw;
@@ -269,4 +291,5 @@
     h2{
     margin-top: 200px;
     }
+
 }

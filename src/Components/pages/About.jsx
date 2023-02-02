@@ -35,16 +35,18 @@ const About = () => {
         <Text id='about-h1' fontSize="6xl" >Who I am ... </Text>
         <img src={rysavy}></img>
         <Text 
-        id='about-text' 
+        className='about-text' 
         fontSize="1xl"
-      /*  sx={{letterSpacing:'1px'}} */ >... I am <span>Denis Rysavy</span>.<br />A 27 years old <span>full-stack developer</span> living in Bremen, Germany. I love music, art in general, cats, science, technology, math, coding and much more. As a full-stack <span>software developer</span> I am capable of covering the full range of technology between <span>frontend and backend development</span>. I have a big passion for UI and UX principles and love clean and user friendly layouts. But I am also capable of managing server-side operations, for example setting up and running different kinds of servers, creating and connecting to different kinds of databases to handle a variety of tasks from password protected login and signup functionality to shopping systems or user dashboards where the user can create data, read data, update data or delete data (CRUD). And much more !
-      <br />
-      <br />
-      As a Programmer I am a problem solver, tell me whats the issue and with my <span>5 years of Experience</span> I am sure I will find a solution !
-      </Text>
+        ><Text fontSize={'3xl'}>... I am <span style={{fontSize:"1em"}}>Denis Rysavy</span>.</Text><br />A 27 years old <span>full stack developer</span> living in <span>Bremen, Germany</span>. 🇩🇪 <br/><br />
+        I love music, art in general, cats, science, technology, math, coding and much more. 
+        As a full stack <span>software developer</span> I am capable of covering the full range of technology between <span>frontend and backend </span>development. 
+        I have a big passion for <span>UI & UX </span>principles and love clean and user friendly layouts. 
+        I am also capable of handling <span>server side </span>operations, for example setting up and running different kinds of servers, creating and connecting to different kinds of <span>databases</span> to handle a variety of tasks from password protected login and signup functionality to shopping systems or user dashboards where the user can create data, read data, update data or delete data, so called <span>CRUD</span> operations, just to name a few.</Text>
+      <Text className='about-text'>As a <span>Programmer</span> I am a <span>problem solver</span>, tell me whats the issue and I will find a solution !</Text>
+      <br/>
       
       </Box>
-      <Text className="text-values3">My Qualities</Text>
+      <Text className="text-values3">My Qualities</Text> 
           <Box className='box-values'>
           <Box className="box-values-header">
             <SlHeart />
@@ -64,22 +66,27 @@ const About = () => {
             </Box>
           </Box>  
 
-      <Text w={'100vw'} mb={20} mt={20} fontSize="6xl" >My Skillset</Text>
-      <Box  className="tech-stack-container" bg={'white'} > 
-      <Text  w={'100vw'} mb={10} mt={20} fontSize="4xl" >Frontend TechStack</Text>
-        <CircularProgress className='tech-stack' mr={5} size='120px' value={92} color='yellow.400' thickness='8px' ><CircularProgressLabel><HtmlIcon/> <Text ml={'12%'} fontSize="12px" >HTML 5</Text></CircularProgressLabel></CircularProgress>
-        <CircularProgress className='tech-stack' mr={5} size='120px' value={96} color='yellow.400' thickness='8px' ><CircularProgressLabel><CssIcon/> <Text ml={'12%'} fontSize="12px" >CSS 3</Text></CircularProgressLabel></CircularProgress>
-        <CircularProgress className='tech-stack' mr={5} size='120px' value={60} color='yellow.400' thickness='8px' ><CircularProgressLabel><JsIcon/> <Text ml={'12%'} fontSize="12px" >JavaScript</Text></CircularProgressLabel></CircularProgress>
-        <CircularProgress className='tech-stack' mr={5} size='120px' value={80} color='yellow.400' thickness='8px' ><CircularProgressLabel> <ReactIcon/> <Text ml={'12%'} fontSize="12px" >React</Text> </CircularProgressLabel></CircularProgress>
-      <Text w={'100vw'} mb={10} mt={20} fontSize="4xl" >Backend TechStack</Text>
-        <CircularProgress mr={5} size='120px' value={30} color='yellow.400' thickness='8px' ><CircularProgressLabel> <NodeIcon/> <Text ml={'12%'} fontSize="12px" >Node.js</Text> </CircularProgressLabel></CircularProgress>
-        <CircularProgress mr={5} size='120px' value={55} color='yellow.400' thickness='8px' ><CircularProgressLabel> <ExpressIcon/> <Text ml={'12%'} fontSize="12px" >express.js</Text> </CircularProgressLabel></CircularProgress>
-        <CircularProgress mr={5} size='120px' value={60} color='yellow.400' thickness='8px' ><CircularProgressLabel> <PostgresqlIcon/>  <Text ml={'12%'} fontSize="12px" >Postgresql</Text></CircularProgressLabel></CircularProgress>
-        <CircularProgress mr={5} size='120px' value={36} color='yellow.400' thickness='8px' ><CircularProgressLabel> <MongoDbIcon/>  <Text ml={'12%'} fontSize="12px" >MongoDB</Text></CircularProgressLabel></CircularProgress>
-      <Text w={'100vw'} mb={10} mt={20} fontSize="4xl" >Version Control and Code Editor</Text>
-
-        <CircularProgress mr={5} size='120px' value={86} color='yellow.400' thickness='8px' ><CircularProgressLabel> <GitIcon/>  <Text ml={'12%'} fontSize="12px" >Git</Text></CircularProgressLabel></CircularProgress>
-        <CircularProgress mr={5} size='120px' value={90} color='yellow.400' thickness='8px' ><CircularProgressLabel> <VisualStudioIcon/>  <Text ml={'12%'} fontSize="12px" >VS Code</Text></CircularProgressLabel></CircularProgress>
+      <Text bg={'white'} w={'100vw'} mb={20} mt={20} fontSize="6xl" >My Skillset</Text>
+      <Box  className="tech-stack-container"> 
+        <Text bg={'yellow'} w={'100vw'} mt={20} fontSize="4xl" mb="8vh" >Frontend TechStack</Text>
+        <Box bg={'white'}> 
+          <CircularProgress className='tech-stack' mr={5} size='120px' value={92} color='yellow.400' thickness='8px' ><CircularProgressLabel><HtmlIcon/> <Text ml={'12%'} fontSize="12px" >HTML 5</Text></CircularProgressLabel></CircularProgress>
+          <CircularProgress className='tech-stack' mr={5} size='120px' value={96} color='yellow.400' thickness='8px' ><CircularProgressLabel><CssIcon/> <Text ml={'12%'} fontSize="12px" >CSS 3</Text></CircularProgressLabel></CircularProgress>
+          <CircularProgress className='tech-stack' mr={5} size='120px' value={60} color='yellow.400' thickness='8px' ><CircularProgressLabel><JsIcon/> <Text ml={'12%'} fontSize="12px" >JavaScript</Text></CircularProgressLabel></CircularProgress>
+          <CircularProgress className='tech-stack' mr={5} size='120px' value={80} color='yellow.400' thickness='8px' ><CircularProgressLabel> <ReactIcon/> <Text ml={'12%'} fontSize="12px" >React</Text> </CircularProgressLabel></CircularProgress>
+        </Box>
+        <Text bg={'yellow.400'} w={'100vw'} mt={20} fontSize="4xl" mb="8vh" >Backend TechStack</Text>
+        <Box bg={'white'}>
+          <CircularProgress mr={5} size='120px' value={30} color='yellow.400' thickness='8px' ><CircularProgressLabel> <NodeIcon/> <Text ml={'12%'} fontSize="12px" >Node.js</Text> </CircularProgressLabel></CircularProgress>
+          <CircularProgress mr={5} size='120px' value={55} color='yellow.400' thickness='8px' ><CircularProgressLabel> <ExpressIcon/> <Text ml={'12%'} fontSize="12px" >express.js</Text> </CircularProgressLabel></CircularProgress>
+          <CircularProgress mr={5} size='120px' value={60} color='yellow.400' thickness='8px' ><CircularProgressLabel> <PostgresqlIcon/>  <Text ml={'12%'} fontSize="12px" >Postgresql</Text></CircularProgressLabel></CircularProgress>
+          <CircularProgress mr={5} size='120px' value={36} color='yellow.400' thickness='8px' ><CircularProgressLabel> <MongoDbIcon/>  <Text ml={'12%'} fontSize="12px" >MongoDB</Text></CircularProgressLabel></CircularProgress>
+        </Box>
+        <Text bg={'white'} w={'100vw'} mt={20} fontSize="4xl" mb="8vh" >Version Control and Code Editor</Text>
+        <Box mb={20} bg={'white'}>
+          <CircularProgress mr={5} size='120px' value={86} color='yellow.400' thickness='8px' ><CircularProgressLabel> <GitIcon/>  <Text ml={'12%'} fontSize="12px" >Git</Text></CircularProgressLabel></CircularProgress>
+          <CircularProgress mr={5} size='120px' value={90} color='yellow.400' thickness='8px' ><CircularProgressLabel> <VisualStudioIcon/>  <Text ml={'12%'} fontSize="12px" >VS Code</Text></CircularProgressLabel></CircularProgress>
+        </Box>
       </Box>
     </>
   )

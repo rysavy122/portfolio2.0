@@ -86,18 +86,16 @@ const Home = () => {
       },
       "@media (max-width: 568px)": {
         height: '100vh',
-        height: isVisible ? "250vh" : "370vh",
-        transform: `translateY(${isVisible ? '-70vh' : '0'})`,
+        height: isVisible ? "278vh" : "370vh",
+        transform: `translateY(${isVisible ? '-60vh' : '0'})`,
         transition: 'transform 500ms ease-in-out'
       },
     }}
      >
-      <Text id='hi'>
-        Hi, nice to meet you !
-      </Text>
+      <Text id='hi'>Hi, nice to meet you !</Text>
       <SlArrowDown
       style={{ 
-        transform: `rotate(${isVisible ? '180deg' : '0deg'}) translateY(${isVisible ? '-25vh' : '0'})`,
+        transform: `rotate(${isVisible ? '180deg' : '0deg'}) translateY(${isVisible ? '-28vh' : '0'})`,
       }}
       onClick={handleClick} 
       title='click me' 
@@ -111,25 +109,19 @@ const Home = () => {
           transition: 'transform 500ms ease-in-out',
           display: isVisible ? "block" : "none" 
         }}>
-        <Text id="intro">
-          My Name is <span className="span">Denis Rysavy</span>, I am 27 years old, living in Bremen, Germany 🇩🇪.
-          <br/>
-          <br />
-          <br /> I am a <span className='span'>full-stack developer ... 💻 </span> 
-          <br />
-          <br />
-          <br />
 
-          <p>On this Website you can review my work and contact me if you need help with anything Software related.</p>
-          <br />
-          <br />
-          Enjoy exploring ! →
-          <Link color={'yellow'} to={'/about'}> About me</Link>
-          <br />
-          <br />
-          <br />
-          <Text>Thank you for visiting my portfolio ! <br/><br/>🙏</Text>
-          </Text>
+
+        <Box id="intro">
+          <Box mb={16} bg={'white'}>
+            <Text>My Name is <span className="span">Denis Rysavy</span>,</Text>
+            <Text p={2} >I am a <span className='span'>full stack developer... </span> 💻 </Text>
+          </Box>
+          <Box mb={16} bg={'white'} >
+            <Text>On this Website you can <span>review my work</span> and <span>contact me</span> if you need help with anything Software related.</Text>
+          </Box>
+          <Text mb={16} p={2} bg={'white'} >Enjoy exploring ! → <Link id='about-link' color={'yellow'} to={'/about'}><span>About me</span></Link></Text>
+          <Text p={2} bg={'white'}><span>Thank you </span>for visiting my portfolio ! <br/>🙏</Text>
+          </Box>
 
 
 
@@ -143,7 +135,7 @@ const Home = () => {
           <Box className="box-values2-header">
           <h1>Pageload</h1>
             <SlSpeedometer/>
-              <p>Keeping pageload low not only makes the page faster, its also good for SEO. Time is money ...</p>
+              <p>Keeping pageload low not only makes the page faster, it is also good for SEO. Time is money ...</p>
           </Box>
           <Box className="box-values2-header">
           <h1>Security</h1>
@@ -191,7 +183,7 @@ const Home = () => {
               </Box>
               <Flex className="responsive">
                 <MdOutlineWeb />
-                <BsPlus />
+                <IoIosAdd />
                 <MdMoreTime/>
                 <TbEqual />
                 < MdOutlineAttachMoney/>
