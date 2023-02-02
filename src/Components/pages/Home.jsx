@@ -1,51 +1,9 @@
 import React, { useState } from 'react';
 import { Box, Flex, Text } from '@chakra-ui/layout';
+import { Link } from 'react-router-dom';
+
 import {
-  Accordion,
-  AccordionItem,
-  AccordionButton,
-  AccordionPanel,
-  AccordionIcon,
-} from '@chakra-ui/react'
-import { 
-  SlEye,
-  SlArrowDown, 
-  SlEmotsmile, 
-  SlEqualizer, 
-  SlHeart, 
-  SlMagicWand,
-  SlScreenDesktop, 
-  SlLike, 
-  SlScreenSmartphone, 
-  SlScreenTablet, 
-  SlSpeedometer, 
-  SlSizeActual, 
-  SlRocket, 
-  SlBubbles, 
-  SlBulb, 
-  SlNote, 
-  SlCheck, 
-  SlLock  } from 'react-icons/sl';
-import { 
-  BsCodeSlash,
-  BsHeart,
-  BsBraces, 
-  BsPlus, 
-  BsCurrencyDollar, 
-  BsEmojiHeartEyes,
-  BsDash } from 'react-icons/bs';
-import { 
-  TbEqual, 
-  TbHeartHandshake, 
-  TbRocket } from 'react-icons/tb';
-import {
-  IoIosDesktop, 
-  IoIosPhonePortrait, 
-  IoIosLaptop,
-  IoIosTabletLandscape,
-  IoIosAdd,
-  IoIosCheckmark} from 'react-icons/io';
-import {
+
   MdMoreTime, 
   MdOutlineWeb, 
   MdOutlineDesignServices,
@@ -55,17 +13,29 @@ import {
   MdCheck, 
   MdLightbulbOutline, 
   MdOutlineForum,
-  MdOutlineThumbUpAlt,
   MdOutlineArrowForward, 
   MdInsertEmoticon, 
-  MdOutlineHourglassDisabled, 
-  MdOutlineHttp, 
-  MdOutlineHourglassEmpty, 
   MdOutlineSecurity, 
   MdWarningAmber, 
-  MdOutlineAttachMoney} from 'react-icons/md';
-import { Link } from 'react-router-dom';
-import { transform } from 'framer-motion';
+  MdOutlineAttachMoney 
+
+} from 'react-icons/md';
+
+import { 
+
+  SlArrowDown, 
+  SlEqualizer, 
+  SlSpeedometer, 
+  SlSizeActual, 
+  SlLock  
+
+} from 'react-icons/sl';
+
+import { BsDash } from 'react-icons/bs';
+import { TbEqual } from 'react-icons/tb';
+import { IoIosAdd } from 'react-icons/io';
+
+
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -91,8 +61,9 @@ const Home = () => {
         transition: 'transform 500ms ease-in-out'
       },
     }}
-     >
-      <Text id='hi'>Hi, nice to meet you !</Text>
+     > <Link to={'/contact'}>
+      <Text  pb={4} id='hi'>Hi, nice to meet you !</Text>
+      </Link>
       <SlArrowDown
       style={{ 
         transform: `rotate(${isVisible ? '180deg' : '0deg'}) translateY(${isVisible ? '-28vh' : '0'})`,
@@ -101,7 +72,6 @@ const Home = () => {
       title='click me' 
       id='more' />
       <Box id="spacer"/>
-
       <Box 
         id="box-hidden"
         style={{ 
@@ -109,8 +79,6 @@ const Home = () => {
           transition: 'transform 500ms ease-in-out',
           display: isVisible ? "block" : "none" 
         }}>
-
-
         <Box id="intro">
           <Box mb={16} bg={'white'}>
             <Text>My Name is <span className="span">Denis Rysavy</span>,</Text>
@@ -122,9 +90,6 @@ const Home = () => {
           <Text mb={16} p={2} bg={'white'} >Enjoy exploring ! → <Link id='about-link' color={'yellow'} to={'/about'}><span>About me</span></Link></Text>
           <Text p={2} bg={'white'}><span>Thank you </span>for visiting my portfolio ! <br/>🙏</Text>
           </Box>
-
-
-
           <Text className="text-values2">My key values</Text>
           <Box className='box-values'>
           <Box className="box-values2-header">
@@ -149,10 +114,6 @@ const Home = () => {
             </Box>
           </Box>         
       </Box>
-
-
-
-
       <Box
           style={{ 
           transform: `opacity(${isVisible ? '1' : '0'})`,

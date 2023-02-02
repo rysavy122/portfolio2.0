@@ -197,10 +197,10 @@
     animation: slideIn 1s ease-out 1 forwards;
     transform: translateX(-30%);
     margin-top: 15vh;
-    margin-bottom:5vh;
+    margin-bottom:7vh;
     line-height: 4.5rem;
     width:100vw;
-    font-size: 4rem;
+    font-size: 5rem;
     background-color: white;
   }
 
