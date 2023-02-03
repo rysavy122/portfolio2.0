@@ -24,7 +24,7 @@ const MainNavigation = () => {
         <NavLink as={NavLink} to ="/About" className="link" ><AboutIcon /></NavLink>
         <NavLink as={NavLink} to="/Projects" className="link" ><ProjectIcon/></NavLink>
         <NavLink as={NavLink} to="/Contact" className="link" ><ContactIcon/></NavLink>
-        <Button _hover={{bg:"yellow", color:"black", border:"1px solid black"}} p={'0px 0px'} color={'white'} bg={'black'} id='toggle-themes-btn' leftIcon={<MdOutlineLightMode  />} /* colorScheme='white'  */variant='outline'></Button>
+        <Button _hover={{bg:"yellow", color:"black", border:"1px solid black"}} p={'0px 0px'} color={'yellow'} bg={'black'} id='toggle-themes-btn' leftIcon={<MdOutlineDarkMode  />} /* colorScheme='white'  */variant='outline'></Button>
     </Box>  
     </>
     )

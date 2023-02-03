@@ -85,11 +85,11 @@ const Home = () => {
             <Text p={2} >I am a <span className='span'>full stack developer... </span> 💻 </Text>
           </Box>
           <Box mb={16} bg={'white'} >
-          <Text p={2} bg={'white'}><span>Welcome </span>to my portfolio website ! <br/>✌️</Text>
+          <Text p={2} bg={'white'}><Link to="/"><span>Welcome </span></Link>to my portfolio website ! <br/>✌️</Text>
             <Text>On this Website you can <Link id='about-link' color={'yellow'} to={'/projects'}><span>review my work</span></Link> and <Link id='about-link' color={'yellow'} to={'/contact'}><span>contact me</span></Link> if you need help with anything Software related.</Text>
           </Box>
-          <Text mb={16} p={2} bg={'white'} >Find out more <Link id='about-link' color={'yellow'} to={'/about'}><span>About me</span>.</Link></Text>
-          <Text p={2} bg={'white'}><span>Thank you </span>for visiting my portfolio ! <br/>🙏</Text>
+          <Text mb={31} p={3} bg={'white'} >Find out more <Link id='about-link' color={'yellow'} to={'/about'}><span>About me</span>.</Link></Text>
+          <Text mt={20} mb={'20vh'} p={2} bg={'white'}><span>Thank you </span>for visiting my portfolio website ! <br/>🙏</Text>
           </Box>
           <Text className="text-values2">My key values</Text>
           <Box className='box-values'>
@@ -124,7 +124,9 @@ const Home = () => {
           <Text className="text-values">My key values</Text>
             <Box className="box-values">
               <Box className="box-values-header">
-              <SlSizeActual />
+                <Box className='value-icon-container'>
+                  <SlSizeActual/>
+                </Box>
                 <h1>Responsive Webdesign</h1>
               </Box>
               <Flex className="responsive">
@@ -136,12 +138,14 @@ const Home = () => {
                 <TbEqual />
                 <MdCheck/>
               </Flex>
-              <Text borderBottom={'1px'} p={2} bgColor={'yellow'}>Smartphone, Tablet, Laptop or Desktop ? 100% flexible Screensizes, fits any Device !</Text>
+              <Text borderBottom={'1px'} p={2} bgColor={'#fff942'}>Smartphone, Tablet, Laptop or Desktop ? 100% flexible Screensizes, fits any Device !</Text>
             </Box>
             <Box className="box-values">
               <Box className="box-values-header">
-              <SlSpeedometer/>
-                <h1>Fast pageload speeds</h1>
+                <Box className='value-icon-container'>
+                  <SlSpeedometer/>
+                </Box>
+                <h1>Fast pageload times</h1>
               </Box>
               <Flex className="responsive">
                 <MdOutlineWeb />
@@ -150,11 +154,13 @@ const Home = () => {
                 <TbEqual />
                 < MdOutlineAttachMoney/>
               </Flex>
-              <Text borderBottom='1px' p={2} bgColor={'yellow'}>Keeping the pageload times low has many advantages. Remember, time is money... </Text>
+              <Text borderBottom='1px' p={2} bgColor={'#fff942'}>Keeping the pageload times low has many advantages. Remember, time is money... </Text>
             </Box>
             <Box className="box-values">
               <Box className="box-values-header">
-              <SlLock/>
+                <Box className='value-icon-container'>
+                  <SlLock/>
+                </Box >
                 <h1>Security</h1>
               </Box>
               <Flex className="responsive">
@@ -164,11 +170,13 @@ const Home = () => {
                 <TbEqual />
                 <MdWarningAmber />
               </Flex>
-              <Text borderBottom={'1px'} p={2} bgColor={'yellow'}>Internet Security is a huge topic. It is very important to be safe out there.</Text>
+              <Text borderBottom={'1px'} p={2} bgColor={'#fff942'}>Internet Security is a huge topic. It is very important to be safe out there.</Text>
             </Box>
             <Box className="box-values">
               <Box className="box-values-header">
-              <SlEqualizer />
+                <Box className='value-icon-container'>
+                  <SlEqualizer/>
+                </Box>
                 <h1>100% Customizable</h1>
               </Box>
               <Flex className="responsive">
@@ -180,7 +188,7 @@ const Home = () => {
                 <TbEqual />
                 <MdInsertEmoticon />
               </Flex>
-              <Text borderBottom={'1px'} p={2} bgColor={'yellow'}>Need a special feature or design ? You name it, I make it. Fully customizable to your needs...</Text>
+              <Text borderBottom={'1px'} p={2} bgColor={'#fff942'}>Need a special feature or design ? You name it, I make it. Fully customizable to your needs...</Text>
             </Box>
       </Box>
     </Box>

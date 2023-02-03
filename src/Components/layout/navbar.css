@@ -3,6 +3,7 @@
     height:250px;
     width:225px;
     background-color: #F9F003;
+    background-color: yellow;
     position: absolute;
     position: fixed;
     font-size: 4em;
@@ -26,32 +27,39 @@
     margin-left: -182px;
     letter-spacing: 0.1rem;
 }
-#external-links{
-
-    background-color: #F9F003;
+#external-links {
     background-color: yellow;
-    margin-right:16vw;
     justify-content: space-evenly;
-
+    height:60px;
+    width:100vw;
+    
 }
+
+#external-links svg{
+    background-color: yellow;
+    height:40px;
+    width:32px;
+}
+
 
 #sidenav{
     position: fixed;
     background-color: #F9F003;
-    width:110vw;
+    background-color: yellow;
+    width:100vw;
     display: flex;
     justify-content: space-evenly;
     margin:0px;
-    margin-left: -10vw;
     z-index: 10;
 }
 #footer-content p{
     width:100vw;
     text-align: center;
     color:black;
+    margin-left: 60px;
+    margin: auto;
     margin-top:20vh;
     margin-bottom:15px;
-    margin-left: 60px;
 }
 
 
@@ -109,8 +117,6 @@
     }
 
     #external-links{
-
-        background-color: #F9F003;
         background-color: yellow;
         margin-right:34vw;
         margin-bottom:5vh;
@@ -123,7 +129,8 @@
 
 
 #external-links svg{
-    margin:20px;
+    margin-top: 10px;
+    margin-left:0px;
 }
 
 
@@ -135,7 +142,6 @@
 
 #sidenav svg{
     margin:-10px;
-    margin-left:3vw;
     height:55px;
     width:25px;
 }
@@ -150,7 +156,7 @@
 #toggle-themes-btn {
     border-radius: 50%;
     width: 30px;
-    margin: 0.5vh -14vw 0px -10px;
+    margin: 0.5vh -11vw 0px -10px;
     min-width: 20px;
     height: 30px;
 } 
@@ -160,6 +166,6 @@
     margin: auto;
     border: 0px;
     padding: 4px;
-
-    
 }
+
+

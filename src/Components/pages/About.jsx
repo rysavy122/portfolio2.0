@@ -70,7 +70,7 @@ const About = () => {
             </Box>
           </Box>  
 
-      <Text bg={'white'} w={'100vw'} mb={20} mt={20} fontSize="6xl" >My Skillset</Text>
+      <Text bg={'white'} w={'100vw'} pb={'4vh'} mb={100} mt={60} fontSize="6xl" >My Skillset</Text>
       <Box  className="tech-stack-container"> 
         <Text bg={'yellow'} w={'100vw'} mt={20} fontSize="4xl" mb="8vh" >Frontend TechStack</Text>
         <Box bg={'white'}> 
