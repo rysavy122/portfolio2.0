@@ -59,8 +59,8 @@ const Footer = () => {
             h={10}
             w={10}></Button>
 
-<ButtonGroup size='sm' isAttached variant='outline'>
-  <IconButton aria-label='Add to friends' icon={<SlArrowUpCircle />} />
+<ButtonGroup  size='sm' isAttached variant='outline'>
+  <IconButton aria-label='Go to top' icon={<SlArrowUp />} />
 </ButtonGroup>
 
             

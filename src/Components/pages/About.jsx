@@ -47,9 +47,8 @@ const About = () => {
         I am also capable of handling <span>server side </span>operations, for example setting up and running different kinds of servers, creating and connecting to different kinds of <span>databases</span> to handle a variety of tasks from password protected login and signup functionality to shopping systems or user dashboards where the user can create data, read data, update data or delete data, so called <span>CRUD</span> operations, just to name a few.</Text>
       <Text pr={4} w={'95vw'} mb={'7vh'} bg={'white'} >As a Programmer I am a <span>problem solver</span>, tell me whats the issue and I will find a solution !</Text>
       </Text>
-      <br/>
-      
       </Box>
+      <br/>
       <Text className="text-values3">My Qualities</Text> 
           <Box className='box-values'>
           <Box className="box-values-header">

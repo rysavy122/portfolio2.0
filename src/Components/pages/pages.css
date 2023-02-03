@@ -1,11 +1,12 @@
 .about-text{
-    width:95vw;
+    width:100vw;
     margin:4%;
     margin-top: 70px;
     text-align: justify;
     line-height: 1.8;
     margin-top:15vh;
     padding-right: 3%;
+    margin:auto;
 }
 
 
@@ -21,15 +22,17 @@
 #about-h1{
   margin:50px;
   margin-top: 7vh;
-  margin-left:-8vw;
+  margin-left:-0vw;
   margin-bottom: 7vh;
   background-color: white;
   height:70px;
+  width:100vw;
+
 }
 #projects-h1{
-  margin:50px;
+  margin:50px auto;
   margin-top: 7vh;
-  margin-left:-8vw;
+  width:100vw;
   margin-bottom: 7vh;
   background-color: white;
   height:70px;
@@ -50,7 +53,6 @@
     width:100vw;
     height:80%;
     margin: auto;
-    margin-right: 30vw;
 }
 
 #more {
@@ -68,7 +70,6 @@
   .text-values3{
     margin-top: 15vh;
     font-size: 3rem;
-    margin-left:-25vw;
     margin-bottom: 11vh;
     background-color: white;
   }
@@ -221,7 +222,7 @@
   }
 
   #project-page{
-    width:120vw;
+    width:100vw;
     padding:auto;
     margin-bottom: 9vh;
   }
@@ -265,9 +266,11 @@
     text-align: center;
   }
   .tech-stack-container{
-    margin: auto;
-    margin-right:25vw ;
+    width:100vw;
+    margin: -100;
+
   }
+
 
   
   @keyframes slideIn {
@@ -326,4 +329,8 @@
     margin-top: 200px;
     }
 
+}
+
+#about-page{
+  max-width:100vw;
 }

@@ -81,15 +81,15 @@ const Home = () => {
         }}>
         <Box id="intro">
           <Box mb={16} bg={'white'}>
-            <Text>My Name is <Link to="/about"><span className="span">Denis Rysavy</span></Link>,</Text>
-            <Text p={2} >I am a <span className='span'>full stack developer... </span> 💻 </Text>
+            <Text>My Name is <Link to="/about"><span id='denis-rysavy' className="span">Denis Rysavy</span></Link>,</Text>
+            <Text pb={6} >I am a <span className='span'>full stack developer... </span> 💻 </Text>
           </Box>
           <Box mb={16} bg={'white'} >
-          <Text p={2} bg={'white'}><Link to="/"><span>Welcome </span></Link>to my portfolio website ! <br/>✌️</Text>
-            <Text>On this Website you can <Link id='about-link' color={'yellow'} to={'/projects'}><span>review my work</span></Link> and <Link id='about-link' color={'yellow'} to={'/contact'}><span>contact me</span></Link> if you need help with anything Software related.</Text>
+          <Text pt={0} bg={'white'}><Link to="/"><span id="home" >Welcome </span></Link>to my portfolio website ! <br/>✌️</Text>
+            <Text>On this Website you can <Link id='about-link' color={'yellow'} to={'/projects'}><span id='projects' >review my work</span></Link> and <Link id='about-link' color={'yellow'} to={'/contact'}><span>contact me</span></Link> if you need help with anything Software related.</Text>
           </Box>
-          <Text mb={31} p={3} bg={'white'} >Find out more <Link id='about-link' color={'yellow'} to={'/about'}><span>About me</span>.</Link></Text>
-          <Text mt={20} mb={'20vh'} p={2} bg={'white'}><span>Thank you </span>for visiting my portfolio website ! <br/>🙏</Text>
+          <Text mb={31} p={3} bg={'white'} >Find out more <Link to={'/about'}><span id="about-me" >About me</span>.</Link></Text>
+          <Text mt={20} mb={'20vh'} p={2} bg={'white'}><span id="thank-you">Thank you </span>for visiting my portfolio website ! <br/>🙏</Text>
           </Box>
           <Text className="text-values2">My key values</Text>
           <Box className='box-values'>

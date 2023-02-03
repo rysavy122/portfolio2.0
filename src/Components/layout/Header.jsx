@@ -6,7 +6,7 @@ const Header = () => {
     <div id="logo1">
       <br />
       <h1>rysavy</h1>
-      <h2>FULLSTACK WEBDEVELOPER</h2>
+      <h2>FULLSTACK WEBDEVELOPMENT</h2>
       <br />
     </div>
   )
