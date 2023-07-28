@@ -1,0 +1,66 @@
+.about-text {
+  width: 100vw;
+  margin: 4%;
+  margin-top: 70px;
+  text-align: justify;
+  line-height: 1.8;
+  margin-top: 15vh;
+  margin: auto;
+  margin-right: 0px;
+  background-color: white;
+}
+
+#about-h1 {
+  width: 100vw;
+  background-color: white;
+  height: 50px;
+  margin: 80px auto;
+}
+
+span {
+  font-weight: bold;
+  font-size: 1.4rem;
+  border-bottom: 5px solid yellow;
+}
+
+#about-page svg {
+  height: 100px;
+  width: 100px;
+}
+#about-page img {
+  width: 100vw;
+  height: 80%;
+  margin: auto;
+  margin-bottom: 150px;
+}
+#about-page {
+  max-width: 100vw;
+  background-color: white;
+}
+
+@media screen and (min-width: 768px) {
+  #about-page {
+    margin-left: -3vw;
+    background-color: white;
+  }
+  #about-page img {
+    width: 30%;
+    height: 100%;
+    float: left;
+  }
+  .about-text {
+    width: 50vw;
+    background-color: white;
+    text-align: justify;
+    line-height: 1.8;
+    margin-top: 55vh;
+    margin-left: 30vw;
+  }
+
+  #about-h1 {
+    margin: 7vh 50px 7vh -3vw;
+    background-color: white;
+    height: 70px;
+    width: 100vw;
+  }
+}

@@ -1,0 +1,34 @@
+#contact-h1{
+    margin:50px;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+    margin-left:-0vw;
+    background-color: white;
+    height:70px;
+  }
+
+#contact-page svg{
+    margin: 10px auto;
+    margin-bottom:15px;
+}
+
+#contact-page{
+    width:100vw;
+    padding:auto;
+}
+#contact-body{
+  background-color: white;
+  margin-bottom: 15vh;
+}
+
+
+  @media screen and (min-width: 768px){
+
+#contact-page{
+    padding:auto;
+    width:32vw;
+    margin-left: -3vw;
+}
+
+  }
+
