@@ -1,5 +1,21 @@
 #root {
   max-width: 1280px;
+  min-width: 300px;
   margin: 0 auto;
   text-align: center;
 }
+.App{  
+  width: 100vw;
+}
+
+@media screen and (min-width: 768px) {
+  .App{  
+    width: 80vw;
+    border-left: 1px solid black;
+    border-right: 10px solid yellow;
+    position: absolute;
+    right:10vw;
+  }
+}
+
+

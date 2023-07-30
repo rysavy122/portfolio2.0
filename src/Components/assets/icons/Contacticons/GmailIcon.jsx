@@ -5,7 +5,7 @@ import { SiGmail } from "react-icons/si";
 
 const GmailIcon = () => {
   return (
-      <SiGmail />
+      <SiGmail color='red' />
   )
 }
 

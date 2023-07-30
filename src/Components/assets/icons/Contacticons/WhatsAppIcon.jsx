@@ -5,7 +5,7 @@ import { SiWhatsapp } from "react-icons/si";
 
 const WhatsAppIcon = () => {
   return (
-      <SiWhatsapp />
+      <SiWhatsapp color='green' />
   )
 }
 

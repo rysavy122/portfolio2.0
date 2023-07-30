@@ -38,9 +38,15 @@ span {
   background-color: white;
 }
 
+
+/* FOR BIG SCREENS LIKE LAPTOP OR DESKTOPS
+ */
 @media screen and (min-width: 768px) {
   #about-page {
+    width: 77vw;
+    margin: 0px;
     margin-left: -3vw;
+    margin-bottom: 5vh;
     background-color: white;
   }
   #about-page img {
@@ -58,9 +64,9 @@ span {
   }
 
   #about-h1 {
-    margin: 7vh 50px 7vh -3vw;
-    background-color: white;
+    margin: 7vh 50px 7vh -36vw;
     height: 70px;
     width: 100vw;
+    background-color: transparent;
   }
 }

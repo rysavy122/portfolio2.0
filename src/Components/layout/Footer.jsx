@@ -21,12 +21,13 @@ const Footer = () => {
           <LinkedinIcon />
         </Link>
       </Flex>
+      <Flex></Flex>
 
       <Button
+        id="button"
         _hover={{
           backgroundColor: "yellow.300",
         }}
-        id="button"
         backgroundColor={"yellow.200"}
         borderRadius={"50%"}
         border={"1px solid blue"}
@@ -35,8 +36,7 @@ const Footer = () => {
         mt={5}
         mr={5}
         h={10}
-        w={10}
-      >
+        w={10}>
         {DE}
       </Button>
       <div id="footer-content">

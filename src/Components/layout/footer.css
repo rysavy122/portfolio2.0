@@ -1,60 +1,83 @@
 #external-links {
-    background-color: yellow;
-    justify-content: space-evenly;
-    height:60px;
-    width:100vw;
-    
+  background-color: yellow;
+  justify-content: space-evenly;
+  height: 60px;
+  width: 100vw;
 }
-
-#external-links svg{
-    background-color: yellow;
-    height:40px;
-    width:32px;
-    margin-top: 10px;
-    margin-left:0px;
-}
-
-#external-links svg:hover{
+#back-to-top{
     cursor: pointer;
+    position: absolute;
+    bottom:15vw;
+    right:4vw;
+}
+#button{
+    position: absolute;
+    bottom:0vw;
+    left:-8vw;
+}
 
+#external-links svg {
+  background-color: yellow;
+  height: 40px;
+  width: 32px;
+  margin-top: 10px;
+  margin-left: 0px;
 }
-#footer-content #back-to-top{
-    float:right;
-    margin-right: 5%;
-    margin-top:-10%;
+
+#external-links svg:hover {
+  cursor: pointer;
 }
-#footer-content p{
-    width:100vw;
-    text-align: center;
-    color:black;
-    margin-left: 60px;
+#footer-content #back-to-top {
+  float: right;
+  margin-right: 5%;
+  margin-top: -10%;
+}
+#footer-content p {
+  width: 100vw;
+  text-align: center;
+  color: black;
+  margin-left: 60px;
+  margin: auto;
+  margin-top: 20vh;
+  margin-bottom: 15px;
+}
+
+/* FOR BIG SCREENS LIKE LAPTOP OR DESKTOPS
+ */
+@media screen and (min-width: 768px) {
+  #footer-content p {
     margin: auto;
-    margin-top:20vh;
-    margin-bottom:15px;
+    text-align: center;
+    color: black;
+    margin-left: 0vw;
+    font-size: 1rem;
+    padding: 50px;
+  }
+  #back-to-top{
+    cursor: pointer;
+    position: fixed;
+    bottom:2vw;
+    right:-0.3vw;
 }
 
-@media screen and (min-width: 768px){
-
-    #footer-content p{
-        width:71.1vw;
-        margin: auto;
-        text-align: center;
-        color:black;
-        margin-left:0vw;
-        font-size: 1rem;
-        padding:50px;
-    }
-
-    #footer{
-        width:71.1vw;
-        margin-left: -3vw;
-    }
-    #external-links{
-        background-color: yellow;
-        margin-right:54vw;
-        margin-bottom:5vh;
-        margin-top:5vh;
-        width:71.5vw;
-    
-    }
+  #footer {
+    width: 70vw;
+    margin: auto;
+  }
+  #button{
+    position: fixed;
+    bottom:0px;
+    left:20px;
+}
+  #footer-content{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #external-links {
+    background-color: yellow;
+    margin-bottom: 5vh;
+    margin-top:4vh;
+    width: 25vw;
+    margin-left: 50vw;
+  }
 }

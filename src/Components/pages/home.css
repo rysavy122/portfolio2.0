@@ -1,0 +1,85 @@
+#container-home{
+    
+}
+#more {
+  margin: auto;
+  cursor: pointer;
+  opacity: 0;
+  animation: fadeIn 2s ease-in 1 forwards;
+  animation-delay: 1s;
+  margin-left: 48vw;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+#hi {
+  opacity: 0;
+  animation: slideIn 1s ease-out 1 forwards;
+  transform: translateX(-30%);
+  margin-top: 15vh;
+  margin-bottom: 7vh;
+  line-height: 4.5rem;
+  width: 100vw;
+  font-size: 5rem;
+  background-color: white;
+}
+#intro {
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  width: 80vw;
+  text-align: center;
+}
+
+#spacer {
+  height: 30vh;
+}
+#box-hidden {
+  width: 90%;
+  margin-left: 0vw;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-30%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* FOR BIG SCREENS LIKE LAPTOP OR DESKTOPS
+ */
+@media screen and (min-width: 768px) {
+  #more {
+    margin: auto;
+  }
+  #spacer {
+    height: 35vh;
+  }
+  #box-hidden {
+    height: 60vh;
+    width: 107%;
+    margin-left: -0vw;
+  }
+  #hi {
+    font-size: 9em;
+    margin-left: -10vw;
+    margin-top: 40vh;
+    margin-bottom: 10vh;
+    padding: 50px;
+  }
+  h2 {
+    margin-top: 50px;
+  }
+}
