@@ -1,55 +1,52 @@
-#logo1{
-    position: fixed;
-    height:250px;
-    width:fit-content;
-    background-color: #F9F003;
-    background-color: yellow;
+#logo1 {
+  position: fixed;
+  height: 250px;
+  width: fit-content;
+  background-color: yellow;
+  position: absolute;
+  position: fixed;
+  font-size: 1.8em;
+  top: 2vh;
+  right: 0vw;
+  z-index: -10;
+}
+
+#logo1 h1 {
+  margin-left: -70px;
+  font-weight: 600;
+  line-height: 10rem;
+}
+#logo1 h2 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-left: -182px;
+  letter-spacing: 0.1rem;
+  z-index: -12;
+}
+
+/* FOR BIG SCREENS LIKE LAPTOP OR DESKTOPS
+ */
+@media screen and (min-width: 768px) {
+  #logo1 {
+    height: 400px;
+    width: 450px;
+    font-size: 3em;
+    background-color: #f9f003;
     position: absolute;
     position: fixed;
-    font-size: 1.8em;
-    top:2vh;
-    right:0vw;
-    z-index:-10;
-}
-
-#logo1 h1{
-    margin-left:-70px;
+    right: 15vw;
+  }
+  #logo1 h1 {
+    margin-left: -140px;
+    margin-top: 50px;
     font-weight: 600;
-    line-height: 10rem;
-
-}
-#logo1 h2{
-    font-size: 17px;
+    line-height: 3rem;
+  }
+  #logo1 h2 {
+    font-size: 34px;
     font-weight: 600;
-    margin-left: -182px;
-    letter-spacing: 0.1rem;
-    z-index:-12;
-
-}
-
-@media screen and (min-width: 768px){
-    
-    #logo1{
-        height:400px;
-        width:450px;
-        font-size: 3em;
-        background-color: #F9F003;
-        position: absolute;
-        position:fixed;
-        right:15vw;
-    }
-    #logo1 h1{
-        margin-left:-140px;
-        margin-top: 50px;
-        font-weight: 600;
-        line-height: 3rem;
-    }
-    #logo1 h2{
-        font-size: 34px;
-        font-weight: 600;
-        margin-left: -276px;
-        letter-spacing: 0.3rem;
-        margin-top: 160px;
-    }
-
+    margin-left: -276px;
+    letter-spacing: 0.3rem;
+    margin-top: 160px;
+  }
 }

@@ -1,5 +1,5 @@
 #sidenav {
-  background-color: #f9f003;
+  position: fixed;
   background-color: yellow;
   width: 100vw;
   display: flex;
@@ -8,32 +8,32 @@
   z-index: 10;
 }
 #sidenav svg {
-    margin: -10px;
-    height: 55px;
-    width: 25px;
-  }
-  
-  #sidenav #toggle-themes-btn svg {
-    margin: 0px;
-    padding: 0px;
-    height: 20px;
-  }
-  
-  #toggle-themes-btn {
-    border-radius: 50%;
-    width: 30px;
-    margin: 0.5vh -11vw 0px -10px;
-    min-width: 20px;
-    height: 30px;
-  }
-  
-  #toggle-themes-btn span {
-    width: 30px;
-    margin: auto;
-    border: 0px;
-    padding: 4px;
-  }
-  
+  margin: -10px;
+  height: 55px;
+  width: 25px;
+}
+
+#sidenav #toggle-themes-btn svg {
+  margin: 0px;
+  padding: 0px;
+  height: 20px;
+}
+
+#toggle-themes-btn {
+  border-radius: 50%;
+  width: 30px;
+  margin: 0.5vh -11vw 0px -10px;
+  min-width: 20px;
+  height: 30px;
+}
+
+#toggle-themes-btn span {
+  width: 30px;
+  margin: auto;
+  border: 0px;
+  padding: 4px;
+}
+
 /* FOR BIG SCREENS LIKE LAPTOPS OR DESKTOPS
  */
 @media screen and (min-width: 768px) {

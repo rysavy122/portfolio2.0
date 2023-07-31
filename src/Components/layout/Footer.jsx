@@ -1,13 +1,42 @@
-import React from "react";
+import { useState, useEffect } from 'react'; 
 import GithubIcon from "../assets/icons/SocialMedialicons/GithubIcon";
 import LinkedinIcon from "../assets/icons/SocialMedialicons/LinkedinIcon";
 import { SlArrowUp, SlArrowUpCircle } from "react-icons/sl";
+import { IconButton, Button, Icon } from '@chakra-ui/react';
+import { keyframes } from '@chakra-ui/react';
 import { Link } from "@chakra-ui/layout";
 import "../layout/footer.css";
 import { Flex, Text } from "@chakra-ui/layout";
-import { Button, ButtonGroup, IconButton } from "@chakra-ui/react";
 
 const Footer = () => {
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 300) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    });
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const fadeIn = keyframes`
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  `;
+
   const DE = "DE";
   const EN = "EN";
   return (
@@ -45,7 +74,14 @@ const Footer = () => {
           © {new Date().getFullYear()} Denis Rysavy. All rights reserved.
         </Text>
         <div id="back-to-top">
-          <SlArrowUp />
+          <Button
+          id='back-to-top-btn'
+            position="fixed"
+            zIndex={10}
+            animation={`${fadeIn} 0.3s ease-in-out`}
+            style={{ display: showButton ? "inline" : "none" }}
+            onClick={scrollToTop}
+          >⇡</Button>
         </div>
       </div>
     </div>

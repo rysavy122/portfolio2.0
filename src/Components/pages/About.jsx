@@ -33,13 +33,12 @@ const About = () => {
             mt={"-5vh"}
             mb={"7vh"}
             bg={"white"}
-            fontSize={"3xl"}
-          >
+            fontSize={"3xl"}>
             ... I am <span style={{ fontSize: "1em" }}>Denis Rysavy</span>.
           </Text>
           <Text p={5} w={"100vw"} mb={"7vh"} bg={"white"}>
             A 27 years old <span>fullstack developer</span> living in{" "}
-            <span>Bremen, Germany</span>. 🇩🇪{" "}
+            <span>Hamburg, Germany</span>.{" "}
           </Text>
           <Text p={5} mb={"7vh"} bg={"white"}>
             I love <b>music</b>, <b>art</b> in general, <b>cats</b>,{" "}
@@ -66,7 +65,7 @@ const About = () => {
         </Text>
       </Box>
       <br />
-{/*       <Text className="text-values3">My Qualities</Text>
+      {/*       <Text className="text-values3">My Qualities</Text>
       <Box className="box-values">
         <Box className="box-values-header">
           <SlHeart />
@@ -85,12 +84,17 @@ const About = () => {
           <h1>Eye for the Detail</h1>
         </Box>
       </Box> */}
-
-      <Text bg={"white"} w={"100vw"} pb={"4vh"} mb={100} mt={60} fontSize="6xl">
-        My Skillset
-      </Text>
       <Box className="tech-stack-container">
-        <Text bg={"yellow"} w={"100vw"} mt={20} fontSize="4xl" mb="8vh">
+        <Text
+          bg={"white"}
+          pt={"6vh"}
+          pb={"10vh"}
+          mb={200}
+          mt={60}
+          fontSize="6xl">
+          My Skillset
+        </Text>
+        <Text pt={1} pb={1} mt={20} fontSize="4xl" mb="8vh">
           Frontend TechStack
         </Text>
         <Box bg={"white"}>
@@ -100,8 +104,7 @@ const About = () => {
             size="120px"
             value={92}
             color="yellow"
-            thickness="8px"
-          >
+            thickness="8px">
             <CircularProgressLabel>
               <HtmlIcon />{" "}
               <Text ml={"12%"} fontSize="12px">
@@ -115,8 +118,7 @@ const About = () => {
             size="120px"
             value={96}
             color="yellow"
-            thickness="8px"
-          >
+            thickness="8px">
             <CircularProgressLabel>
               <CssIcon />{" "}
               <Text ml={"12%"} fontSize="12px">
@@ -130,8 +132,7 @@ const About = () => {
             size="120px"
             value={60}
             color="yellow"
-            thickness="8px"
-          >
+            thickness="8px">
             <CircularProgressLabel>
               <JsIcon />{" "}
               <Text ml={"12%"} fontSize="12px">
@@ -145,8 +146,7 @@ const About = () => {
             size="120px"
             value={80}
             color="yellow"
-            thickness="8px"
-          >
+            thickness="8px">
             <CircularProgressLabel>
               {" "}
               <ReactIcon />{" "}
@@ -156,7 +156,7 @@ const About = () => {
             </CircularProgressLabel>
           </CircularProgress>
         </Box>
-        <Text bg={"yellow.400"} w={"100vw"} mt={20} fontSize="4xl" mb="8vh">
+        <Text mt={20} fontSize="4xl" mb="8vh">
           Backend TechStack
         </Text>
         <Box bg={"white"}>
@@ -165,8 +165,7 @@ const About = () => {
             size="120px"
             value={30}
             color="yellow.400"
-            thickness="8px"
-          >
+            thickness="8px">
             <CircularProgressLabel>
               {" "}
               <NodeIcon />{" "}
@@ -180,8 +179,7 @@ const About = () => {
             size="120px"
             value={55}
             color="yellow.400"
-            thickness="8px"
-          >
+            thickness="8px">
             <CircularProgressLabel>
               {" "}
               <ExpressIcon />{" "}
@@ -195,8 +193,7 @@ const About = () => {
             size="120px"
             value={60}
             color="yellow.400"
-            thickness="8px"
-          >
+            thickness="8px">
             <CircularProgressLabel>
               {" "}
               <PostgresqlIcon />{" "}
@@ -210,8 +207,7 @@ const About = () => {
             size="120px"
             value={36}
             color="yellow.400"
-            thickness="8px"
-          >
+            thickness="8px">
             <CircularProgressLabel>
               {" "}
               <MongoDbIcon />{" "}
@@ -221,7 +217,7 @@ const About = () => {
             </CircularProgressLabel>
           </CircularProgress>
         </Box>
-        <Text bg={"white"} w={"100vw"} mt={20} fontSize="4xl" mb="8vh">
+        <Text bg={"white"} mt={20} fontSize="4xl" mb="8vh">
           Version Control and Code Editor
         </Text>
         <Box mb={20} bg={"white"}>
@@ -230,8 +226,7 @@ const About = () => {
             size="120px"
             value={86}
             color="yellow.600"
-            thickness="8px"
-          >
+            thickness="8px">
             <CircularProgressLabel>
               {" "}
               <GitIcon />{" "}
@@ -245,8 +240,7 @@ const About = () => {
             size="120px"
             value={90}
             color="yellow.600"
-            thickness="8px"
-          >
+            thickness="8px">
             <CircularProgressLabel>
               {" "}
               <VisualStudioIcon />{" "}

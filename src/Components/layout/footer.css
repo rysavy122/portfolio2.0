@@ -4,20 +4,19 @@
   height: 60px;
   width: 100vw;
 }
-#back-to-top{
-    cursor: pointer;
-    position: absolute;
-    bottom:15vw;
-    right:4vw;
+#back-to-top {
+  cursor: pointer;
+  position: absolute;
+  bottom: 15vw;
+  right: 4vw;
 }
-#button{
-    position: absolute;
-    bottom:0vw;
-    left:-8vw;
+#button {
+  position: absolute;
+  bottom: 0vw;
+  left: -8vw;
 }
 
 #external-links svg {
-  background-color: yellow;
   height: 40px;
   width: 32px;
   margin-top: 10px;
@@ -49,35 +48,47 @@
     margin: auto;
     text-align: center;
     color: black;
-    margin-left: 0vw;
+    width: 70vw;
+    margin-left: -30vw;
+/*     border: 25px solid yellow;
+    border-bottom: none; */
     font-size: 1rem;
     padding: 50px;
   }
-  #back-to-top{
+  #back-to-top {
     cursor: pointer;
     position: fixed;
-    bottom:2vw;
-    right:-0.3vw;
-}
-
+    bottom: 2vw;
+    right: -0.3vw;
+    padding:10px;
+    font-size: 2rem;
+  }
+  #back-to-top-btn{
+    font-size: 2rem;
+    background-color: #f9f003;
+    font-weight: 300;
+    width:5vw;
+    border:none;
+  }
   #footer {
     width: 70vw;
     margin: auto;
   }
-  #button{
+  #button {
     position: fixed;
-    bottom:0px;
-    left:20px;
-}
-  #footer-content{
+    bottom: -2vh;
+    left: -1vw;
+  }
+  #footer-content {
     display: flex;
     justify-content: space-evenly;
   }
   #external-links {
-    background-color: yellow;
-    margin-bottom: 5vh;
-    margin-top:4vh;
+    background-color: #f9f003;
+    margin-bottom: 3vh;
+    margin-top: 10vh;
     width: 25vw;
     margin-left: 50vw;
   }
+
 }
