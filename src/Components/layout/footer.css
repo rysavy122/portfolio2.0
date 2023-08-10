@@ -1,5 +1,5 @@
 #external-links {
-  background-color: yellow;
+  background-color: #f9f003;
   justify-content: space-evenly;
   height: 60px;
   width: 100vw;
@@ -60,7 +60,6 @@
     position: fixed;
     bottom: 2vw;
     right: -0.3vw;
-    padding:10px;
     font-size: 2rem;
   }
   #back-to-top-btn{

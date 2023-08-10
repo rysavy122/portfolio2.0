@@ -7,7 +7,6 @@
   margin-top: 15vh;
   margin: auto;
   margin-right: 0px;
-  background-color: white;
 }
 
 #about-h1 {
@@ -35,7 +34,6 @@ span {
 }
 #about-page {
   max-width: 100vw;
-  background-color: white;
 }
 .tech-stack-container {
   width: 100vw;
@@ -52,7 +50,6 @@ span {
     margin: 0px;
     margin-left: -3vw;
     margin-bottom: 5vh;
-    background-color: white;
   }
   #about-page img {
     width: 30%;
@@ -60,8 +57,7 @@ span {
     float: left;
   }
   .about-text {
-    width: 50vw;
-    background-color: white;
+    width: 40vw;
     text-align: justify;
     line-height: 1.8;
     margin-top: 55vh;

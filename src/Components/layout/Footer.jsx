@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import GithubIcon from "../assets/icons/SocialMedialicons/GithubIcon";
 import LinkedinIcon from "../assets/icons/SocialMedialicons/LinkedinIcon";
 import { SlArrowUp, SlArrowUpCircle } from "react-icons/sl";
-import { IconButton, Button, Icon } from '@chakra-ui/react';
+import {  Button } from '@chakra-ui/react';
 import { keyframes } from '@chakra-ui/react';
 import { Link } from "@chakra-ui/layout";
 import "../layout/footer.css";
@@ -10,6 +10,7 @@ import { Flex, Text } from "@chakra-ui/layout";
 
 const Footer = () => {
   const [showButton, setShowButton] = useState(false);
+
 
   useEffect(() => {
     window.addEventListener("scroll", () => {

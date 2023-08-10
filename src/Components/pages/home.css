@@ -1,7 +1,4 @@
-#container-home{
-  background-color: white;
-    
-}
+
 #more {
   margin: auto;
   cursor: pointer;
@@ -22,7 +19,6 @@
   line-height: 4.5rem;
   width: 100vw;
   font-size: 5rem;
-  background-color: white;
 }
 #intro {
   font-size: 1.3rem;
@@ -69,7 +65,7 @@
     margin: auto;
     position:absolute;
     left:-1vw;
-    bottom:20vh;
+    bottom:98vh;
   }
   #spacer {
     height: 22vh;
@@ -89,7 +85,6 @@
     padding-right:0px;
     padding-top: 100px;
     height:75vh;
-    background-color: white;
 
     
   }

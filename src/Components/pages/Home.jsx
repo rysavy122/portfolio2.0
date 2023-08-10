@@ -1,19 +1,22 @@
 import React, { useState } from "react";
-import { Box, Flex, Text } from "@chakra-ui/layout";
+import { useColorModeValue } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/layout";
 import { Link } from "react-router-dom";
-import { SlArrowDown } from "react-icons/sl";
 import "./home.css";
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
 
+  const bg = useColorModeValue('white', 'rgb(26	32	44)')
+  const color = useColorModeValue('black', 'white')
+  
   function handleClick() {
     setIsVisible(!isVisible);
   }
 
   return (
     <>
-      <Box
+      <Box  bg={bg} color={color}
         id="container-home"
         css={{
           "@media (min-width: 768px)": {
@@ -26,22 +29,16 @@ const Home = () => {
           },
         }}>
         {" "}
-          <Box pb={4} id="hi">
+        <Box bg={bg} color={color} pb={4} id="hi">
           <Link to={"/contact"}>
             <Text>Hi, nice to meet you !</Text>
-            </Link>
-          </Box>
-{/*         <SlArrowDown
-          style={{
-            transform: `rotate(${isVisible ? "180deg" : "0deg"}) translateY(${
-              isVisible ? "-28vh" : "0"
-            })`,
-          }}
+          </Link>
+        </Box>
+        <Box
+          bg={"black"}
           onClick={handleClick}
-          title="click me"
           id="more"
-        /> */}
-        <Box bg={"black"} onClick={handleClick} id="more" title="click me"></Box>
+          title="click me"></Box>
         <Box id="spacer" />
         <Box
           id="box-hidden"
@@ -70,7 +67,7 @@ const Home = () => {
                 <Link to="/">
                   <span id="home">Welcome </span>
                 </Link>
-                to my Portfolio Website ! <br />
+                to my Online Portfolio ! <br />
               </Text>
               <br />
               <Text>
@@ -92,8 +89,8 @@ const Home = () => {
               </Link>
             </Text>
             <Text mt={20} mb={"20vh"} p={2}>
-              <span id="thank-you">Thank you </span>for visiting my portfolio
-              website ! <br />
+              <span id="thank-you">Thank you </span>for visiting my Website !{" "}
+              <br />
             </Text>
           </Box>
         </Box>
