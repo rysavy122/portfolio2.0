@@ -11,9 +11,9 @@
 }
 
 #hi {
-  opacity: 0;
-  animation: slideIn 1s ease-out 1 forwards;
-  transform: translateX(-30%);
+  opacity: 1;
+/*   animation: slideIn 1s ease-out 1 forwards;
+  transform: translateX(-30%) */;    
   margin-top: 20vh;
   margin-bottom: 7vh;
   line-height: 4.5rem;
