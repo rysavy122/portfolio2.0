@@ -6,7 +6,7 @@ import { SlEnvolope } from "react-icons/sl";
 
 const ContactIcon = () => {
   return (
-    <SlEnvolope/>
+    <SlEnvolope color='black'/>
   )
 }
 

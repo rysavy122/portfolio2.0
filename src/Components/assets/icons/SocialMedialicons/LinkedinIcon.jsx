@@ -7,7 +7,7 @@ import { SlSocialLinkedin } from "react-icons/sl";
 const LinkedinIcon = () => {
   return (
 
-    <SlSocialLinkedin/>
+    <SlSocialLinkedin color='black'/>
   )
 }
 

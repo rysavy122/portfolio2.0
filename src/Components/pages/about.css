@@ -38,7 +38,6 @@ span {
 .tech-stack-container {
   width: 100vw;
   margin: -100;
-  background-color: white;
 }
 
 
@@ -75,6 +74,5 @@ span {
     margin: 0px;
     margin-left: -3vw;
     margin-bottom: 5vh;
-    background-color: white;
   }
 }

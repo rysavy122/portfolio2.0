@@ -1,16 +1,14 @@
-import { useState, useEffect } from 'react'; 
+import { useState, useEffect } from "react";
+import { keyframes, Button, useColorModeValue } from "@chakra-ui/react";
+import { Flex, Text, Link } from "@chakra-ui/layout";
 import GithubIcon from "../assets/icons/SocialMedialicons/GithubIcon";
 import LinkedinIcon from "../assets/icons/SocialMedialicons/LinkedinIcon";
-import { SlArrowUp, SlArrowUpCircle } from "react-icons/sl";
-import {  Button } from '@chakra-ui/react';
-import { keyframes } from '@chakra-ui/react';
-import { Link } from "@chakra-ui/layout";
 import "../layout/footer.css";
-import { Flex, Text } from "@chakra-ui/layout";
 
 const Footer = () => {
   const [showButton, setShowButton] = useState(false);
-
+  const [language, setLanguage] = useState("DE");
+  const bg = useColorModeValue("white", "rgb(26	32	44)");
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -38,8 +36,10 @@ const Footer = () => {
     }
   `;
 
-  const DE = "DE";
-  const EN = "EN";
+  const toggleLanguage = () => {
+    setLanguage(language === "DE" ? "EN" : "DE");
+  };
+
   return (
     <div id="footer">
       <Flex id="external-links">
@@ -54,6 +54,8 @@ const Footer = () => {
       <Flex></Flex>
 
       <Button
+        color={"black"}
+        onClick={toggleLanguage}
         id="button"
         _hover={{
           backgroundColor: "yellow.300",
@@ -67,22 +69,24 @@ const Footer = () => {
         mr={5}
         h={10}
         w={10}>
-        {DE}
+        {language}
       </Button>
       <div id="footer-content">
-        <Text textAlign={"center"} fontSize={12}>
+        <Text bg={bg} textAlign={"center"} fontSize={12}>
           {" "}
           © {new Date().getFullYear()} Denis Rysavy. All rights reserved.
         </Text>
         <div id="back-to-top">
           <Button
-          id='back-to-top-btn'
+            id="back-to-top-btn"
+            color={"black"}
             position="fixed"
             zIndex={10}
             animation={`${fadeIn} 0.3s ease-in-out`}
             style={{ display: showButton ? "inline" : "none" }}
-            onClick={scrollToTop}
-          >⇡</Button>
+            onClick={scrollToTop}>
+            ⇡
+          </Button>
         </div>
       </div>
     </div>

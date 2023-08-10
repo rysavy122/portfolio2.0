@@ -7,16 +7,18 @@ import "./home.css";
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  const bg = useColorModeValue('white', 'rgb(26	32	44)')
-  const color = useColorModeValue('black', 'white')
-  
+  const bg = useColorModeValue("white", "rgb(26	32	44)");
+  const color = useColorModeValue("black", "white");
+
   function handleClick() {
     setIsVisible(!isVisible);
   }
 
   return (
     <>
-      <Box  bg={bg} color={color}
+      <Box
+        bg={bg}
+        color={color}
         id="container-home"
         css={{
           "@media (min-width: 768px)": {
@@ -34,11 +36,7 @@ const Home = () => {
             <Text>Hi, nice to meet you !</Text>
           </Link>
         </Box>
-        <Box
-          bg={"black"}
-          onClick={handleClick}
-          id="more"
-          title="click me"></Box>
+        <Box bg={color} onClick={handleClick} id="more" title="click me"></Box>
         <Box id="spacer" />
         <Box
           id="box-hidden"

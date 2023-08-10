@@ -6,12 +6,10 @@
 #project-page {
   width: 100vw;
   margin-bottom: 50px;
-  background-color: white;
 }
 
 #projects-h1 {
   width: 100vw;
-  background-color: white;
   height: 50px;
   margin: 80px auto;
 }
@@ -24,7 +22,6 @@
     margin: 0px;
     margin-left: -3vw;
     margin-bottom: 5vh;
-    background-color: white;
   }
   #projects-h1 {
     margin: 7vh 50px 7vh -38vw;

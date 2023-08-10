@@ -5,7 +5,7 @@ import { SlHome } from "react-icons/sl";
 const HomeIcon = () => {
   return (
 
-    <SlHome/>
+    <SlHome color='black'/>
   )
 }
 

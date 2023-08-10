@@ -1,5 +1,7 @@
 import React from "react";
-import { Text, Flex, Link } from "@chakra-ui/layout";
+import { Text, Link } from "@chakra-ui/layout";
+import { useColorModeValue } from "@chakra-ui/react";
+
 import {
   Image,
   Card,
@@ -15,12 +17,16 @@ import CodeIcon from "../assets/icons/technologiesIcons/CodeIcon";
 import './projects.css';
 
 const Projects = () => {
+
+  const bg = useColorModeValue("white", "rgb(26	32	44)");
+  const color = useColorModeValue("black", "white");
+
   return (
     <div id="project-page">
-      <Text id="projects-h1" fontSize="6xl">
+      <Text bg={bg} id="projects-h1" fontSize="6xl">
         Projects
       </Text>
-      <SimpleGrid
+      <SimpleGrid bg={bg}
         w={{ base: "100%", md: "100%" }} // Adjust width for small screens and desktops
         spacing={20}
         templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }} // 1 column for small screens, 2 columns for desktops
@@ -30,7 +36,7 @@ const Projects = () => {
           }
         `}
       >
-        <Card bg={"white"}>
+        <Card>
           <CardHeader>
             <Heading size="md"> First Project</Heading>
           </CardHeader>
@@ -51,7 +57,7 @@ const Projects = () => {
             </Link>
           </CardFooter>
         </Card>
-        <Card bg={"white"}>
+        <Card>
           <CardHeader>
             <Heading size="md"> Second Project</Heading>
           </CardHeader>
@@ -72,7 +78,7 @@ const Projects = () => {
             </Link>
           </CardFooter>
         </Card>
-        <Card bg={"white"}>
+        <Card>
           <CardHeader>
             <Heading size="md"> Third Project</Heading>
           </CardHeader>
@@ -93,7 +99,7 @@ const Projects = () => {
             </Link>
           </CardFooter>
         </Card>
-        <Card bg={"white"}>
+        <Card>
           <CardHeader>
             <Heading size="md"> Third Project</Heading>
           </CardHeader>

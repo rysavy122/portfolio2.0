@@ -1,7 +1,5 @@
 import React from "react";
 import rysavy from "../../../public/rysavy-removebg-preview.png";
-import { Text, Box } from "@chakra-ui/layout";
-import { CircularProgress, CircularProgressLabel, useColorModeValue } from "@chakra-ui/react";
 import HtmlIcon from "../assets/icons/TechnologiesIcons/HtmlIcon";
 import CssIcon from "../assets/icons/TechnologiesIcons/CSSIcon";
 import JsIcon from "../assets/icons/TechnologiesIcons/JsIcon";
@@ -15,14 +13,13 @@ import GitIcon from "../assets/icons/TechnologiesIcons/GitIcon";
 import NpmIcon from "../assets/icons/TechnologiesIcons/NpmIcon";
 import MongoDbIcon from "../assets/icons/TechnologiesIcons/MongoDbIcon";
 import VisualStudioIcon from "../assets/icons/TechnologiesIcons/VisualStudioIcon";
-
-import { SlEye, SlHeart, SlBubbles } from "react-icons/sl";
-import { BsBraces } from "react-icons/bs";
-
-import "./about.css";
 import NestIcon from "../assets/icons/TechnologiesIcons/NestIcon";
 import OpenAiIcon from "../assets/icons/TechnologiesIcons/OpenAiIcon";
 import TsIcon from "../assets/icons/TechnologiesIcons/TsIcon";
+import { Text, Box } from "@chakra-ui/layout";
+import { CircularProgress, CircularProgressLabel, useColorModeValue } from "@chakra-ui/react";
+import "./about.css";
+
 
 const About = () => {
   const bg = useColorModeValue('white', 'rgb(26	32	44)')
@@ -67,9 +64,8 @@ const About = () => {
         </Text>
       </Box>
       <br />
-      <Box className="tech-stack-container">
+      <Box bg={bg} color={color} className="tech-stack-container">
         <Text
-          bg={"white"}
           pt={"6vh"}
           pb={"10vh"}
           mb={200}
@@ -80,7 +76,7 @@ const About = () => {
         <Text pt={1} pb={1} mt={20} fontSize="4xl" mb="8vh">
           Frontend TechStack
         </Text>
-        <Box bg={"white"}>
+        <Box>
           <CircularProgress
             className="tech-stack"
             mr={5}
@@ -186,7 +182,7 @@ const About = () => {
         <Text mt={20} fontSize="4xl" mb="8vh">
           Backend TechStack
         </Text>
-        <Box bg={"white"}>
+        <Box>
           <CircularProgress
             mr={5}
             size="120px"
@@ -259,10 +255,10 @@ const About = () => {
             </CircularProgressLabel>
           </CircularProgress>
         </Box>
-        <Text bg={"white"} mt={20} fontSize="4xl" mb="8vh">
+        <Text mt={20} fontSize="4xl" mb="8vh">
           Other Tools
         </Text>
-        <Box mb={20} bg={"white"}>
+        <Box mb={20}>
           <CircularProgress
             mr={5}
             size="120px"

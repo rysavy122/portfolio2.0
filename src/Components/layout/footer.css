@@ -34,7 +34,6 @@
 #footer-content p {
   width: 100vw;
   text-align: center;
-  color: black;
   margin-left: 60px;
   margin: auto;
   margin-top: 20vh;
@@ -47,7 +46,6 @@
   #footer-content p {
     margin: auto;
     text-align: center;
-    color: black;
     width: 70vw;
     margin-left: -30vw;
 /*     border: 25px solid yellow;

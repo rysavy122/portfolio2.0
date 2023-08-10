@@ -1,6 +1,5 @@
 #contact-h1 {
   margin: 7vh auto 7vh;
-  background-color: white;
   height: 70px;
   width: 100vw;
   text-align: center;
@@ -13,10 +12,8 @@
   width: 100vw;
   padding: auto;
   margin-bottom: 50px;
-  background-color: white;
 }
  #contact-body {
-  background-color: white;
   margin-bottom: 15vh;
 }
  /* FÜR GROßE BILDSCHIRME WIE LAPTOP ODER DESKTOP */

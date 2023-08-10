@@ -1,21 +1,25 @@
 import React from "react";
 import GmailIcon from "../assets/icons/Contacticons/GmailIcon";
 import WhatsAppIcon from "../assets/icons/Contacticons/WhatsAppIcon";
+import { useColorModeValue } from "@chakra-ui/react";
+
 
 import { Box, Flex, Text } from "@chakra-ui/layout";
-import { Link } from "@chakra-ui/layout";
 import { Button, Input, Textarea } from "@chakra-ui/react";
 import { SlPaperPlane } from "react-icons/sl";
 
 import "./contact.css";
 
 const Contact = () => {
+  const bg = useColorModeValue("white", "rgb(26	32	44)");
+  const color = useColorModeValue("black", "white");
+
   return (
     <div id="contact-page">
-      <Text id="contact-h1" fontSize="6xl">
+      <Text bg={bg} id="contact-h1" fontSize="6xl">
         Let's get in touch{" "}
       </Text>
-      <div id="contact-body">
+      <Box bg={bg} id="contact-body">
         <Input
           mb={3}
           borderRadius={1}
@@ -52,7 +56,7 @@ const Contact = () => {
           }}
           bg={"yellow"}
           type="submit">
-          <SlPaperPlane style={{ margin: "1px" }} />
+          <SlPaperPlane color="black" style={{ margin: "1px" }} />
         </Button>
         <Flex alignItems="center" justifyContent="space-around" mt={20}>
           <a
@@ -68,7 +72,7 @@ const Contact = () => {
             <Text ml={2}>Write me on WhatsApp</Text>
           </a>
         </Flex>
-      </div>
+      </Box>
     </div>
   );
 };

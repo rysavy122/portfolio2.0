@@ -5,7 +5,7 @@ import {SlWrench} from "react-icons/sl";
 const ProjectIcon = () => {
   return (
 
-    <SlWrench/>
+    <SlWrench color='black'/>
   )
 }
 

@@ -5,7 +5,7 @@ import { SlSocialGithub } from "react-icons/sl";
 
 const GithubIcon = () => {
   return (
-      <SlSocialGithub />
+      <SlSocialGithub color='black' />
   )
 }
 
