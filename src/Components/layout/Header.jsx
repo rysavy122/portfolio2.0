@@ -8,7 +8,7 @@ import './header.css';
 const Header = () => {
   const { t } = useTranslation();
   const bg = useColorModeValue("white", "rgb(26	32	44)");
-  const color = useColorModeValue("black", "blue.700");
+  const color = useColorModeValue("black", "rgb(47	55	71)");
 
   return (
     <Box color={color} id="logo1">
