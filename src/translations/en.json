@@ -1,0 +1,36 @@
+{
+    "home": {
+      "hi": "Hi, nice to meet you !",
+      "introName": "My Name is",
+      "name": "Denis Rysavy",
+      "devRole": "I am a Fullstack Web Developer.",
+      "welcome": "Welcome",
+      "workLink": "On this Website you can",
+      "workText": "Take a look at some of my work",
+      "and": "and",
+      "contact": "Contact me",
+      "help": "if you need help with anything Software related.",
+      "findOut": "Find out more",
+      "aboutMe": "About me",
+      "thankYou": "Thank you for visiting my Website !"
+    },
+    "projects": {
+        "h1": "Projects"
+    },
+    "about": {
+        "h1": "Who I am ...",
+        "h2": "I am ... ",
+        "age": " A 27 years old"
+    },
+    "header": {
+      "developer": "WEBDEVELOPER"
+    },
+    "footer": {
+      "rights": "© {{year}} Denis Rysavy. All rights reserved."
+    },
+    "language": {
+      "en": "EN",
+      "de": "DE"
+    }
+  }
+  

@@ -79,12 +79,13 @@
   }
   #hi {
     font-size: 9em;
-    margin-left: -18vw;
+    margin-left: -15vw;
     margin-top: 30vh;
     padding: 50px;
     padding-right:0px;
     padding-top: 100px;
     height:75vh;
+    line-height: 8rem;
 
     
   }

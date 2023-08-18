@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, Link } from "@chakra-ui/layout";
 import { useColorModeValue } from "@chakra-ui/react";
-
+import { useTranslation } from "react-i18next";
 import {
   Image,
   Card,
@@ -20,16 +20,18 @@ const Projects = () => {
 
   const bg = useColorModeValue("white", "rgb(26	32	44)");
   const color = useColorModeValue("black", "white");
+  const { t } = useTranslation();
+
 
   return (
     <div id="project-page">
       <Text bg={bg} id="projects-h1" fontSize="6xl">
-        Projects
+        {t("projects.h1")}
       </Text>
       <SimpleGrid bg={bg}
-        w={{ base: "100%", md: "100%" }} // Adjust width for small screens and desktops
+        w={{ base: "100%", md: "100%" }}
         spacing={20}
-        templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }} // 1 column for small screens, 2 columns for desktops
+        templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}
         css={css`
           @media screen and (max-width: 768px) {
             grid-template-columns: repeat(1, 1fr);

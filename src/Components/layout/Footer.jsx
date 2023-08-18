@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { keyframes, Button, useColorModeValue } from "@chakra-ui/react";
 import { Flex, Text, Link } from "@chakra-ui/layout";
 import GithubIcon from "../assets/icons/SocialMedialicons/GithubIcon";
@@ -6,9 +7,11 @@ import LinkedinIcon from "../assets/icons/SocialMedialicons/LinkedinIcon";
 import "../layout/footer.css";
 
 const Footer = () => {
-  const [showButton, setShowButton] = useState(false);
-  const [language, setLanguage] = useState("DE");
+  const { t, i18n } = useTranslation();
+  const [language, setLanguage] = useState("en");  
   const bg = useColorModeValue("white", "rgb(26	32	44)");
+  const [showButton, setShowButton] = useState(false);
+
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -37,9 +40,11 @@ const Footer = () => {
   `;
 
   const toggleLanguage = () => {
-    setLanguage(language === "DE" ? "EN" : "DE");
+    const newLanguage = language === "en" ? "de" : "en";
+    setLanguage(newLanguage);
+    i18n.changeLanguage(newLanguage);
   };
-
+  
   return (
     <div id="footer">
       <Flex id="external-links">
@@ -69,12 +74,12 @@ const Footer = () => {
         mr={5}
         h={10}
         w={10}>
-        {language}
+      {language === "en" ? "DE" : "EN"}
       </Button>
       <div id="footer-content">
         <Text bg={bg} textAlign={"center"} fontSize={12}>
+          {t("footer.rights", {year: new Date().getFullYear() })}
           {" "}
-          © {new Date().getFullYear()} Denis Rysavy. All rights reserved.
         </Text>
         <div id="back-to-top">
           <Button

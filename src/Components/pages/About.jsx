@@ -18,26 +18,30 @@ import OpenAiIcon from "../assets/icons/TechnologiesIcons/OpenAiIcon";
 import TsIcon from "../assets/icons/TechnologiesIcons/TsIcon";
 import { Text, Box } from "@chakra-ui/layout";
 import { CircularProgress, CircularProgressLabel, useColorModeValue } from "@chakra-ui/react";
+import { useTranslation } from "react-i18next";
+
 import "./about.css";
 
 
 const About = () => {
   const bg = useColorModeValue('white', 'rgb(26	32	44)')
   const color = useColorModeValue('black', 'white')
+  const { t } = useTranslation();
+
 
   return (
     <>
       <Box id="about-page" bg={bg} color={color}>
         <Text id="about-h1" fontSize="6xl">
-          Who I am ...
+          {t("about.h1")}
         </Text>
         <img src={rysavy}></img>
         <Text className="about-text" bg={bg} color={color} fontSize="1xl">
           <Text p={5} mt={"-5vh"} mb={"7vh"} fontSize={"3xl"}>
-            ... I am <span style={{ fontSize: "1em" }}>Denis Rysavy</span>.
+            {t("about.h2")}<span style={{ fontSize: "1em" }}>Denis Rysavy</span>.
           </Text>
           <Text p={5} mb={"7vh"}>
-            A 27 years old <span>fullstack webdeveloper</span> living in{" "}
+            <span>fullstack webdeveloper</span> living in{" "}
             <span>Hamburg, Germany</span>.{" "}
           </Text>
           <Text p={5} mb={"7vh"}>
@@ -45,7 +49,7 @@ const About = () => {
             <b>technology</b>, <b>math</b>, <b>coding</b> and much more.
           </Text>
           <Text p={5} mb={"7vh"}>
-            As a fullstack software developer I am capable of covering the full
+            As a fullstack software developer I am capable of covering the full 
             range of technology between <span>frontend and backend </span>
             development. I have a big passion for <span>UI & UX </span>
             principles and love clean and user friendly layouts. I am also
@@ -63,7 +67,6 @@ const About = () => {
           </Text>
         </Text>
       </Box>
-      <br />
       <Box bg={bg} color={color} className="tech-stack-container">
         <Text
           pt={"6vh"}
