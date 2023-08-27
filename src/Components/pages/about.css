@@ -3,10 +3,15 @@
   margin: 4%;
   margin-top: 70px;
   text-align: justify;
-  line-height: 1.8;
+  font-size: 1.1rem;
+  line-height: 2.2;
+  letter-spacing: 0.09rem;
   margin-top: 15vh;
   margin: auto;
   margin-right: 0px;
+}
+#love{
+  font-size: 1.3rem;
 }
 
 #about-h1 {
@@ -58,7 +63,6 @@ span {
   .about-text {
     width: 40vw;
     text-align: justify;
-    line-height: 1.8;
     margin-top: 55vh;
     margin-left: 30vw;
   }

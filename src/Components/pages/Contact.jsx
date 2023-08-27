@@ -3,28 +3,29 @@ import GmailIcon from "../assets/icons/Contacticons/GmailIcon";
 import WhatsAppIcon from "../assets/icons/Contacticons/WhatsAppIcon";
 import { useColorModeValue } from "@chakra-ui/react";
 
-
 import { Box, Flex, Text } from "@chakra-ui/layout";
 import { Button, Input, Textarea } from "@chakra-ui/react";
 import { SlPaperPlane } from "react-icons/sl";
+import { useTranslation } from "react-i18next";
 
 import "./contact.css";
 
 const Contact = () => {
-  const bg = useColorModeValue("white", "rgb(26	32	44)");
+  const bg = useColorModeValue("white", "black");
   const color = useColorModeValue("black", "white");
+  const { t } = useTranslation();
 
   return (
     <div id="contact-page">
       <Text bg={bg} id="contact-h1" fontSize="6xl">
-        Let's get in touch{" "}
+        {t("contact.h1")}
       </Text>
       <Box bg={bg} id="contact-body">
         <Input
           mb={3}
           borderRadius={1}
           variant="outline"
-          placeholder="Whats youre name ? "
+          placeholder={t("contact.inputName")}
         />
         <Input
           required={true}
@@ -32,20 +33,20 @@ const Contact = () => {
           mb={3}
           borderRadius={1}
           variant="outline"
-          placeholder="Whats youre email ?"
+          placeholder={t("contact.inputEmail")}
         />
         <Input
           mb={3}
           borderRadius={1}
           variant="outline"
-          placeholder="Whats the matter ? "
+          placeholder={t("contact.inputSubject")}
         />
         <Textarea
           h={180}
           mb={1}
           borderRadius={1}
           variant="outline"
-          placeholder="Tell me more about it ..."
+          placeholder={t("contact.inputMessage")}
         />
         <Button
           mt={1}
@@ -63,13 +64,13 @@ const Contact = () => {
             href="mailto:rysavydenis3@gmail.com?subject=Hello&body=Hello,%20can%20we%20chat?"
             target={"_blank"}>
             <GmailIcon id="gmail-icon" />
-            <Text ml={2}>Write me an email</Text>
+            <Text ml={2}>{t("contact.email")}</Text>
           </a>
           <a
             href="https://wa.me/+491630100503?text=Hello,%20can%20we%20chat?"
             target={"_blank"}>
             <WhatsAppIcon />
-            <Text ml={2}>Write me on WhatsApp</Text>
+            <Text ml={2}>{t("contact.whatsApp")}</Text>
           </a>
         </Flex>
       </Box>

@@ -1,36 +1,66 @@
 {
-    "home": {
-      "hi": "Hi, schön dich zu treffen !",
-      "introName": "Mein Name ist",
-      "name": "Denis Rysavy",
-      "devRole": "Ich bin ein Fullstack Webentwickler.",
-      "welcome": "Willkommen",
-      "workLink": "Auf dieser Website kannst du",
-      "workText": "Einen Blick auf einige meiner Arbeiten werfen",
-      "and": "und",
-      "contact": "Kontaktiere mich",
-      "help": "wenn du Hilfe bei etwas Softwarebezogenem benötigst.",
-      "findOut": "Erfahre mehr",
-      "aboutMe": "Über mich",
-      "thankYou": "Vielen Dank für deinen Besuch auf meiner Website!"
-    },
-    "projects": {
-        "h1": "Projekte"
-    },
-    "about": {
-        "h1": "Wer Ich bin ...",
-        "h2": "Ich bin ... ",
-        "age": "Ein 27 Jähriger "
-    },
-    "header": {
-      "developer": "WEBENTWICKLER"
-    },
-    "footer": {
-      "rights": "© {{year}} Denis Rysavy. Alle Rechte vorbehalten."
-    },
-    "language": {
-      "en": "EN",
-      "de": "DE"
-    }
+  "home": {
+    "hi": "Moin. Willkommen !",
+    "introName": "Mein Name ist ",
+    "devRole": "Ich bin ein Fullstack Webentwickler.",
+    "welcome": "Freut mich dich Kennenzulernen !",
+    "workLink": "Hier kannst du ",
+    "workText": "Einen Blick auf einige meiner Arbeiten werfen ",
+    "and": "und ",
+    "contact": "mich kontaktieren ",
+    "help": "wenn du irgendwelche Fragen hast, einfach nur Chatten willst oder Hilfe bei etwas Softwarebezogenem benötigst.",
+    "findOut": "Erfahre mehr ",
+    "aboutMe": "Über mich",
+    "thankYou": "Vielen Dank für deinen Besuch auf meiner Webseite!"
+  },
+  "projects": {
+    "h1": "Projekte",
+    "button": "Besuch mich"
+  },
+  "about": {
+    "h1": "Wer Ich bin ...",
+    "h2": "Ich bin ... ",
+    "age": "Ein 27 Jähriger ",
+    "developer": "Fullstack Webentwickler ",
+    "living": "aus ",
+    "country": "Deutschland",
+    "intro": "Als FullStack Webentwickler beherrsche ich Technologien die das gesamte Spektrum zwischen ",
+    "front2back":"Front- und Backend ",
+    "intro2":"Entwicklung abdecken. Ich habe eine Leidenschaft für ",
+    "intro3": "Prinzipien und liebe saubere und userfreundliche Layouts. Außerdem bin ich in der Lage ",
+    "server": "serverseitige ",
+    "intro4": "Operationen durchzuführen zum Besispiel die Einrichtung und Inbetriebnahme verschiedner Arten von Servern, installieren und verbinden von unterschiedlichen ",
+    "database": "Datenbanken ",
+    "intro5": "um eine vielzahl von Aufgaben auszuführen von Passwort geschützten Login und Signup Funktionalitäten zu Shop Systemen mit Warenkorb oder Dashboards und Admin Bereichen, indenen der Nutzer Daten erstellen, lesen, updaten oder löschen kann, sogenannte ",
+    "intro6": " Operationen, um nur ein paar zu nennen. ",
+    "intro7": "Als Programmierer bin ich ein ",
+    "problem": "Problemlöser ",
+    "intro8": "sag mir wo das Problem liegt und ich finde eine Lösung! ",
+    "love": "Ich liebe ",
+    "hobbies": "Musik, Kunst, Katzen, Natur, Technologie, Mathe, Coding ",
+    "love1": "und mehr... ",
+    "techstack": "Meine Fähigkeiten ",
+    "frontend": "Frontend Technologien",
+    "backend": "Backend Technologien",
+    "tools": "Weitere Werkzeuge"
+  },
+  "contact": {
+    "h1" : "Was gibt's ?",
+    "inputName": "Wie ist dein Name ?",
+    "inputEmail": "Wie ist deine Email ? ",
+    "inputSubject": "Worum geht es ? ",
+    "inputMessage": "Erzähl mir mehr darüber ...",
+    "email":"Schreib mir eine Mail",
+    "whatsApp": "Schreib mir auf whatsApp"
+  },
+  "header": {
+    "developer": "WEBENTWICKLER"
+  },
+  "footer": {
+    "rights": "© {{year}} Denis Rysavy. Alle Rechte vorbehalten."
+  },
+  "language": {
+    "en": "EN",
+    "de": "DE"
   }
-  
+}

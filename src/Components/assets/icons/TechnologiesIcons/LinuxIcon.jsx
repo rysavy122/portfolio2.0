@@ -1,17 +1,16 @@
 import React from 'react'
-import {SiOpenai} from "react-icons/si";
+import { SiLinux } from "react-icons/si";
 import { useColorModeValue } from '@chakra-ui/react';
 
 
-
-const OpenAiIcon = () => {
+const AngularIcon = () => {
   const color = useColorModeValue("black", "white");
   return (
 
     <div className='icons'>
-        <SiOpenai style={{color: color}}/>
+        <SiLinux style={{color: color}}/>
     </div>
   )
 }
 
-export default OpenAiIcon
+export default AngularIcon

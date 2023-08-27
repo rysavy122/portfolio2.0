@@ -16,18 +16,21 @@ import VisualStudioIcon from "../assets/icons/TechnologiesIcons/VisualStudioIcon
 import NestIcon from "../assets/icons/TechnologiesIcons/NestIcon";
 import OpenAiIcon from "../assets/icons/TechnologiesIcons/OpenAiIcon";
 import TsIcon from "../assets/icons/TechnologiesIcons/TsIcon";
+import LinuxIcon from "../assets/icons/TechnologiesIcons/LinuxIcon";
 import { Text, Box } from "@chakra-ui/layout";
-import { CircularProgress, CircularProgressLabel, useColorModeValue } from "@chakra-ui/react";
+import {
+  CircularProgress,
+  CircularProgressLabel,
+  useColorModeValue,
+} from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 
 import "./about.css";
 
-
 const About = () => {
-  const bg = useColorModeValue('white', 'rgb(26	32	44)')
-  const color = useColorModeValue('black', 'white')
+  const bg = useColorModeValue("white", "black");
+  const color = useColorModeValue("black", "white");
   const { t } = useTranslation();
-
 
   return (
     <>
@@ -38,46 +41,44 @@ const About = () => {
         <img src={rysavy}></img>
         <Text className="about-text" bg={bg} color={color} fontSize="1xl">
           <Text p={5} mt={"-5vh"} mb={"7vh"} fontSize={"3xl"}>
-            {t("about.h2")}<span style={{ fontSize: "1em" }}>Denis Rysavy</span>.
+            {t("about.h2")}
+            <span style={{ fontSize: "1em" }}>Denis Rysavy</span>.
           </Text>
           <Text p={5} mb={"7vh"}>
-            <span>fullstack webdeveloper</span> living in{" "}
-            <span>Hamburg, Germany</span>.{" "}
+            {t("about.age")}
+            <span>{t("about.developer")}</span>
+            {t("about.living")}
+            <span>Hamburg, {t("about.country")} </span>.
+          </Text>
+          <Text id="love" p={5} mb={"5vh"}>
+            {t("about.love")}<b>{t("about.hobbies")}</b>{t("about.love1")}
           </Text>
           <Text p={5} mb={"7vh"}>
-            I love <b>music</b>, <b>art</b>, <b>cats</b>, <b>science</b>,{" "}
-            <b>technology</b>, <b>math</b>, <b>coding</b> and much more.
+            {t("about.intro")}
+            <span>{t("about.front2back")}</span>
+            {t("about.intro2")}
+            <span>UI & UX </span>
+            {t("about.intro3")}
+            <span>{t("about.server")}</span>
+            {t("about.intro4")}
+            <span>{t("about.database")}</span>
+            {t("about.intro5")}
+            <span>CRUD</span>
+            {t("about.intro6")}
           </Text>
           <Text p={5} mb={"7vh"}>
-            As a fullstack software developer I am capable of covering the full 
-            range of technology between <span>frontend and backend </span>
-            development. I have a big passion for <span>UI & UX </span>
-            principles and love clean and user friendly layouts. I am also
-            capable of handling <span>server side </span>operations, for example
-            setting up and running different kinds of servers, creating and
-            connecting to different kinds of <span>databases</span> to handle a
-            variety of tasks from password protected login and signup
-            functionality to shopping systems or user dashboards where the user
-            can create, read, update or delete data, so called{" "}
-            <span>CRUD</span> operations, just to name a few.
-          </Text>
-          <Text p={5} mb={"7vh"}>
-            As a Programmer I am a <span>problem solver</span>, tell me whats
-            the issue and I will find a solution !
+            {t("about.intro7")}
+            <span>{t("about.problem")}</span>
+            {t("about.intro8")}
           </Text>
         </Text>
       </Box>
       <Box bg={bg} color={color} className="tech-stack-container">
-        <Text
-          pt={"6vh"}
-          pb={"10vh"}
-          mb={200}
-          mt={60}
-          fontSize="6xl">
-          My Skillset
+        <Text pt={"6vh"} pb={"10vh"} mb={200} mt={60} fontSize="6xl">
+          {t("about.techstack")}
         </Text>
         <Text pt={1} pb={1} mt={20} fontSize="4xl" mb="8vh">
-          Frontend TechStack
+          {t("about.frontend")}
         </Text>
         <Box>
           <CircularProgress
@@ -174,16 +175,15 @@ const About = () => {
             color="yellow"
             thickness="8px">
             <CircularProgressLabel>
-              {" "}
-              <AngularIcon />{" "}
+              <AngularIcon />
               <Text ml={"12%"} fontSize="12px">
                 Angular
-              </Text>{" "}
+              </Text>
             </CircularProgressLabel>
           </CircularProgress>
         </Box>
         <Text mt={20} fontSize="4xl" mb="8vh">
-          Backend TechStack
+        {t("about.backend")}
         </Text>
         <Box>
           <CircularProgress
@@ -228,7 +228,6 @@ const About = () => {
               </Text>{" "}
             </CircularProgressLabel>
           </CircularProgress>
-          
           <CircularProgress
             mr={5}
             size="120px"
@@ -257,9 +256,23 @@ const About = () => {
               </Text>
             </CircularProgressLabel>
           </CircularProgress>
+          <CircularProgress
+            mr={5}
+            size="120px"
+            value={90}
+            color="yellow.600"
+            thickness="8px">
+            <CircularProgressLabel>
+              {" "}
+              <LinuxIcon />{" "}
+              <Text ml={"12%"} fontSize="12px">
+                Linux
+              </Text>
+            </CircularProgressLabel>
+          </CircularProgress>
         </Box>
         <Text mt={20} fontSize="4xl" mb="8vh">
-          Other Tools
+        {t("about.tools")}
         </Text>
         <Box mb={20}>
           <CircularProgress

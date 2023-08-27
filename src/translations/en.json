@@ -1,36 +1,66 @@
 {
-    "home": {
-      "hi": "Hi, nice to meet you !",
-      "introName": "My Name is",
-      "name": "Denis Rysavy",
-      "devRole": "I am a Fullstack Web Developer.",
-      "welcome": "Welcome",
-      "workLink": "On this Website you can",
-      "workText": "Take a look at some of my work",
-      "and": "and",
-      "contact": "Contact me",
-      "help": "if you need help with anything Software related.",
-      "findOut": "Find out more",
-      "aboutMe": "About me",
-      "thankYou": "Thank you for visiting my Website !"
-    },
-    "projects": {
-        "h1": "Projects"
-    },
-    "about": {
-        "h1": "Who I am ...",
-        "h2": "I am ... ",
-        "age": " A 27 years old"
-    },
-    "header": {
-      "developer": "WEBDEVELOPER"
-    },
-    "footer": {
-      "rights": "© {{year}} Denis Rysavy. All rights reserved."
-    },
-    "language": {
-      "en": "EN",
-      "de": "DE"
-    }
+  "home": {
+    "hi": "Hi. Welcome !",
+    "introName": "My Name is ",
+    "devRole": "I am a Fullstack Web Developer.",
+    "welcome": "Nice to meet you ! ",
+    "workLink": "On this Website you can ",
+    "workText": "Take a look at some of my work ",
+    "and": "and ",
+    "contact": "Contact me ",
+    "help": "if you have questions, just wanna chat or need help with anything Software related.",
+    "findOut": "Find out more ",
+    "aboutMe": "About me ",
+    "thankYou": "Thank you for visiting my Website !"
+  },
+  "projects": {
+    "h1": "Projects",
+    "button": "Visit me"
+  },
+  "about": {
+    "h1": "Who I am ...",
+    "h2": "I am ... ",
+    "age": " A 27 years old ",
+    "developer": "Fullstack Webdeveloper ",
+    "living": "from ",
+    "country": "Germany",
+    "intro": "As a Fullstack Webdeveloper I am capable of technologies covering the full range between ",
+    "front2back": "front- and backend ",
+    "intro2": "development. I have a big passion for ",
+    "intro3": "principles and love clean and user friendly layouts. I am also capable of handling ",
+    "server": "server side ",
+    "intro4": "operations, for example setting up and running different kinds of servers, installing and connecting to different kinds of ",
+    "database": "databases ",
+    "intro5": "to handle a variety of tasks from password protected login and signup functionality to shopping systems or dashboards and admin profiles where the user can create, read, update or delete data, so called ",
+    "intro6": " operations, just to name a few. ",
+    "intro7": "As a Programmer I am a ",
+    "problem": "problem solver ",
+    "intro8": ", tell me whats the issue and I will find a solution ! ",
+    "love": "I love ",
+    "hobbies": "music, art, cats, nature, technology, math, coding ",
+    "love1": "and more... ",
+    "techstack": "My Skillset ",
+    "frontend": "Frontend Technologies",
+    "backend": "Backend Technologies",
+    "tools": "Other Tools"
+  },
+  "contact": {
+    "h1" : "What's up ? ",
+    "inputName": "What's youre Name ?",
+    "inputEmail": "What's youre Email ?",
+    "inputSubject": "What's the Matter ? ",
+    "inputMessage": "Tell me more about it ...",
+    "email":"Write me an email",
+    "whatsApp": "Write me on WhatsApp"
+  },
+  "header": {
+    "developer": "WEBDEVELOPER"
+  },
+  "footer": {
+    "rights": "© {{year}} Denis Rysavy. All rights reserved."
+  },
+  "language": {
+    "en": "EN",
+    "de": "DE"
   }
-  
+}

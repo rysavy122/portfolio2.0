@@ -9,7 +9,7 @@ import "../layout/footer.css";
 const Footer = () => {
   const { t, i18n } = useTranslation();
   const [language, setLanguage] = useState("en");  
-  const bg = useColorModeValue("white", "rgb(26	32	44)");
+  const bg = useColorModeValue("white", "black");
   const [showButton, setShowButton] = useState(false);
 
 

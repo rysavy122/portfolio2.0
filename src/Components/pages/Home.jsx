@@ -8,7 +8,7 @@ import "./home.css";
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
   const { t } = useTranslation();
-  const bg = useColorModeValue("white", "rgb(26	32	44)");
+  const bg = useColorModeValue("white", "black");
   const color = useColorModeValue("black", "white");
 
   function handleClick() {
@@ -18,8 +18,6 @@ const Home = () => {
   return (
     <>
       <Box
-        bg={bg}
-        color={color}
         id="container-home"
         css={{
           "@media (min-width: 768px)": {
@@ -31,11 +29,9 @@ const Home = () => {
             transition: "transform 500ms ease-in-out",
           },
         }}>
-        {" "}
-        <Box bg={bg} color={color} pb={4} id="hi">
+        <Box bg={bg} pb={4} id="hi">
           <Link to={"/contact"}>
-            <Text>{t("home.hi")}
-</Text>
+            <Text>{t("home.hi")}</Text>
           </Link>
         </Box>
         <Box bg={color} onClick={handleClick} id="more" title="click me"></Box>
@@ -48,50 +44,47 @@ const Home = () => {
             display: isVisible ? "block" : "none",
           }}>
           <Box id="intro">
-          <Box mb={8}>
-  <Text>
-    {t("home.introName")}{" "}
-    <Link to="/about">
-      <span id="denis-rysavy" className="span">
-        {t("home.name")}
-      </span>
-    </Link>
-    ,
-  </Text>
-  <Text pb={6}>
-    {t("home.devRole")}
-  </Text>
-</Box>
-<Box mb={16}>
-  <Text pt={0}>
-    <Link to="/">
-      <span id="home">{t("home.welcome")}</span>
-    </Link>{" "}
-    <br />
-  </Text>
-  <br />
-  <Text>
-    {t("home.workLink")}{" "}
-    <Link id="about-link" color={"yellow"} to={"/projects"}>
-      <span id="projects">{t("home.workText")}</span>
-    </Link>{" "}
-    {t("home.and")}{" "}
-    <Link id="about-link" color={"yellow"} to={"/contact"}>
-      {t("home.contact")}
-    </Link>{" "}
-    {t("home.help")}
-  </Text>
-</Box>
-<Text mb={31}>
-  {t("home.findOut")}{" "}
-  <Link to={"/about"}>
-    <span id="about-me">{t("home.aboutMe")}</span>.
-  </Link>
-</Text>
-<Text mt={20} mb={"20vh"}>
-  <span id="thank-you">{t("home.thankYou")}</span>{" "}
-  <br />
-</Text>
+            <Box mb={8}>
+              <Text>
+                {t("home.introName")}
+                <Link to="/about">
+                  <span id="denis-rysavy" className="span">
+                    Denis Rysavy
+                  </span>
+                </Link>
+                ,
+              </Text>
+              <Text pb={6}>{t("home.devRole")}</Text>
+            </Box>
+            <Box mb={16}>
+              <Text pt={0}>
+                <Text fontSize={"2xl"} fontWeight={"bold"}>{t("home.welcome")}</Text>
+                <br />
+              </Text>
+              <br />
+              <Text>
+                {t("home.workLink")}
+                <Link id="about-link" color={"yellow"} to={"/projects"}>
+                  <span id="projects">{t("home.workText")}</span>
+                </Link>
+                {t("home.and")}
+                <Link id="about-link" color={"yellow"} to={"/contact"}>
+                  <span>{t("home.contact")}</span>
+                </Link>
+                <br />
+                {t("home.help")}
+              </Text>
+            </Box>
+            <Text mb={31}>
+              {t("home.findOut")}
+              <Link to={"/about"}>
+                <span id="about-me">{t("home.aboutMe")}</span>.
+              </Link>
+            </Text>
+            <Text mt={20} mb={"20vh"}>
+              <span id="thank-you">{t("home.thankYou")}</span>
+              <br />
+            </Text>
           </Box>
         </Box>
       </Box>
