@@ -1,12 +1,8 @@
-import React from 'react'
+import React from "react";
 import { SlHome } from "react-icons/sl";
 
-
 const HomeIcon = () => {
-  return (
+  return <SlHome />;
+};
 
-    <SlHome color='black'/>
-  )
-}
-
-export default HomeIcon
+export default HomeIcon;

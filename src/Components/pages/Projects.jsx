@@ -36,7 +36,7 @@ const Projects = () => {
             grid-template-columns: repeat(1, 1fr);
           }
         `}>
-        <Card bg={bg}>
+        <Card mt={5} bg={bg}>
           <CardHeader>
             <Heading size="md"> First Project</Heading>
           </CardHeader>
@@ -66,7 +66,7 @@ const Projects = () => {
             <Text>Here will be a short description of the Project...</Text>
           </CardBody>
           <Image
-            margin={5}
+            m={5}
             objectFit="cover"
             src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
             alt="Chakra UI"
@@ -80,7 +80,7 @@ const Projects = () => {
             </Link>
           </CardFooter>
         </Card>
-        <Card bg={bg}>
+        <Card  mb={5} bg={bg}>
           <CardHeader>
             <Heading size="md"> Third Project</Heading>
           </CardHeader>
@@ -88,7 +88,7 @@ const Projects = () => {
             <Text>Here will be a short description of the Project...</Text>
           </CardBody>
           <Image
-            margin={5}
+            m={5}
             objectFit="cover"
             src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
             alt="Chakra UI"
@@ -102,7 +102,7 @@ const Projects = () => {
             </Link>
           </CardFooter>
         </Card>
-        <Card bg={bg}>
+        <Card  m={5} bg={bg}>
           <CardHeader>
             <Heading size="md"> Third Project</Heading>
           </CardHeader>

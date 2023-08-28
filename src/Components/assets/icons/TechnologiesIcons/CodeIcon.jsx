@@ -3,14 +3,13 @@ import { BsCode } from "react-icons/bs";
 import { useColorModeValue } from '@chakra-ui/react';
 
 
-
 const CodeIcon = () => {
-  const bg = useColorModeValue("black", "white");
+  const color = useColorModeValue("black", "white");
 
   return (
 
     <div className='icons'>
-        <BsCode style={{backgroundColor: bg}}/>
+        <BsCode style={{color: color}}/>
     </div>
   )
 }

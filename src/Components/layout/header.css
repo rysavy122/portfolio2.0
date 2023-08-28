@@ -1,5 +1,4 @@
 #logo1 {
-  position: fixed;
   height: 250px;
   width: fit-content;
   background-color: #f9f003;
@@ -8,7 +7,6 @@
   font-size: 1.8em;
   top: 2vh;
   right: 0vw;
-  z-index: -10;
 }
 
 #logo1 h1 {

@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@chakra-ui/layout": "^2.1.11",
-    "@chakra-ui/react": "^2.4.2",
+    "@chakra-ui/react": "^2.8.0",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "framer-motion": "^6.5.1",
@@ -19,7 +19,7 @@
     "react-dom": "^18.2.0",
     "react-i18next": "^13.1.1",
     "react-icons": "^4.8.0",
-    "react-router-dom": "^6.4.4"
+    "react-router-dom": "^6.15.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",
