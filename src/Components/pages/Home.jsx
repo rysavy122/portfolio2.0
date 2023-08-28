@@ -30,9 +30,9 @@ const Home = () => {
           },
         }}>
         <Box bg={bg} pb={4} id="hi">
-          <Link to={"/contact"}>
-            <Text>{t("home.hi")}</Text>
-          </Link>
+          <Text>
+            <Link to={"/contact"}>{t("home.hi")}</Link>
+          </Text>
         </Box>
         <Box bg={color} onClick={handleClick} id="more" title="click me"></Box>
         <Box id="spacer" />
@@ -58,7 +58,9 @@ const Home = () => {
             </Box>
             <Box mb={16}>
               <Text pt={0}>
-                <Text fontSize={"2xl"} fontWeight={"bold"}>{t("home.welcome")}</Text>
+                <Text fontSize={"2xl"} fontWeight={"bold"}>
+                  {t("home.welcome")}
+                </Text>
                 <br />
               </Text>
               <br />
