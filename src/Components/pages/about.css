@@ -27,9 +27,10 @@ span {
   border-bottom: 5px solid yellow;
 }
 
-#about-page svg {
-  height: 100px;
-  width: 100px;
+.tech-stack-container svg {
+  height: 130px;
+  width: 130px;
+  margin-left:15px;
 }
 #about-page img {
   width: 100vw;
@@ -73,9 +74,9 @@ span {
     width: 100vw;
     background-color: transparent;
   }
-  .tech-stack-container {
+  #about-page .tech-stack-container {
     width: 77vw;
-    margin: 0px;
+    margin: 10px;
     margin-left: -3vw;
     margin-bottom: 5vh;
   }

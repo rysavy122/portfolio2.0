@@ -13,7 +13,7 @@ import {
   SimpleGrid,
 } from "@chakra-ui/react";
 import { css } from "@emotion/react";
-import CodeIcon from "../assets/icons/technologiesIcons/CodeIcon";
+import CodeIcon from "../assets/icons/TechnologiesIcons/CodeIcon";
 import "./projects.css";
 
 const Projects = () => {

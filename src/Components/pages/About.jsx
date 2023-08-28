@@ -5,6 +5,7 @@ import CssIcon from "../assets/icons/TechnologiesIcons/CSSIcon";
 import JsIcon from "../assets/icons/TechnologiesIcons/JsIcon";
 import ReactIcon from "../assets/icons/TechnologiesIcons/ReactIcon";
 import ChakraIcon from "../assets/icons/TechnologiesIcons/ChakraIcon";
+import BootstrapIcon from "../assets/icons/TechnologiesIcons/Bootstrap";
 import AngularIcon from "../assets/icons/TechnologiesIcons/AngularIcon";
 import NodeIcon from "../assets/icons/TechnologiesIcons/NodeIcon";
 import ExpressIcon from "../assets/icons/TechnologiesIcons/ExpressIcon";
@@ -26,6 +27,7 @@ import {
 import { useTranslation } from "react-i18next";
 
 import "./about.css";
+import SassIcon from "../assets/icons/TechnologiesIcons/SassIcon";
 
 const About = () => {
   const bg = useColorModeValue("white", "black");
@@ -72,7 +74,6 @@ const About = () => {
             {t("about.intro8")}
           </Text>
         </Text>
-      </Box>
       <Box bg={bg} color={color} className="tech-stack-container">
         <Text pt={"6vh"} pb={"10vh"} mb={200} mt={60} fontSize="6xl">
           {t("about.techstack")}
@@ -84,22 +85,21 @@ const About = () => {
           <CircularProgress
             className="tech-stack"
             mr={5}
-            size="120px"
             value={92}
             color="yellow"
             thickness="8px">
             <CircularProgressLabel>
-              <HtmlIcon />{" "}
-              <Text ml={"12%"} fontSize="12px">
+              <HtmlIcon />
+              <Text  ml={"12%"} fontSize="12px">
                 HTML 5
               </Text>
             </CircularProgressLabel>
           </CircularProgress>
-          <CircularProgress
+          <CircularProgress 
             className="tech-stack"
             mr={5}
-            size="120px"
             value={96}
+            size='200px'
             color="yellow"
             thickness="8px">
             <CircularProgressLabel>
@@ -112,7 +112,6 @@ const About = () => {
           <CircularProgress
             className="tech-stack"
             mr={5}
-            size="120px"
             value={60}
             color="yellow"
             thickness="8px">
@@ -126,7 +125,6 @@ const About = () => {
           <CircularProgress
             className="tech-stack"
             mr={5}
-            size="120px"
             value={60}
             color="yellow"
             thickness="8px">
@@ -140,7 +138,6 @@ const About = () => {
           <CircularProgress
             className="tech-stack"
             mr={5}
-            size="120px"
             value={80}
             color="yellow"
             thickness="8px">
@@ -155,7 +152,6 @@ const About = () => {
           <CircularProgress
             className="tech-stack"
             mr={5}
-            size="120px"
             value={80}
             color="yellow"
             thickness="8px">
@@ -170,7 +166,6 @@ const About = () => {
           <CircularProgress
             className="tech-stack"
             mr={5}
-            size="120px"
             value={80}
             color="yellow"
             thickness="8px">
@@ -181,6 +176,34 @@ const About = () => {
               </Text>
             </CircularProgressLabel>
           </CircularProgress>
+          <CircularProgress
+            className="tech-stack"
+            mr={5}
+            value={80}
+            color="yellow"
+            thickness="8px">
+            <CircularProgressLabel>
+              {" "}
+              <BootstrapIcon />{" "}
+              <Text ml={"12%"} fontSize="12px">
+                Bootstrap
+              </Text>{" "}
+            </CircularProgressLabel>
+          </CircularProgress>
+          <CircularProgress 
+            className="tech-stack"
+            mr={5}
+            value={96}
+            size='200px'
+            color="yellow"
+            thickness="8px">
+            <CircularProgressLabel>
+              <SassIcon />{" "}
+              <Text ml={"12%"} fontSize="12px">
+                Sass
+              </Text>
+            </CircularProgressLabel>
+          </CircularProgress>
         </Box>
         <Text mt={20} fontSize="4xl" mb="8vh">
         {t("about.backend")}
@@ -188,7 +211,6 @@ const About = () => {
         <Box>
           <CircularProgress
             mr={5}
-            size="120px"
             value={30}
             color="yellow.400"
             thickness="8px">
@@ -202,7 +224,6 @@ const About = () => {
           </CircularProgress>
           <CircularProgress
             mr={5}
-            size="120px"
             value={55}
             color="yellow.400"
             thickness="8px">
@@ -216,7 +237,6 @@ const About = () => {
           </CircularProgress>
           <CircularProgress
             mr={5}
-            size="120px"
             value={55}
             color="yellow.400"
             thickness="8px">
@@ -230,7 +250,6 @@ const About = () => {
           </CircularProgress>
           <CircularProgress
             mr={5}
-            size="120px"
             value={60}
             color="yellow.400"
             thickness="8px">
@@ -244,7 +263,6 @@ const About = () => {
           </CircularProgress>
           <CircularProgress
             mr={5}
-            size="120px"
             value={36}
             color="yellow.400"
             thickness="8px">
@@ -258,7 +276,6 @@ const About = () => {
           </CircularProgress>
           <CircularProgress
             mr={5}
-            size="120px"
             value={90}
             color="yellow.600"
             thickness="8px">
@@ -272,12 +289,14 @@ const About = () => {
           </CircularProgress>
         </Box>
         <Text mt={20} fontSize="4xl" mb="8vh">
+        {t("about.mobile")}
+        </Text>
+        <Text mt={20} fontSize="4xl" mb="8vh">
         {t("about.tools")}
         </Text>
         <Box mb={20}>
           <CircularProgress
             mr={5}
-            size="120px"
             value={86}
             color="yellow.600"
             thickness="8px">
@@ -291,7 +310,6 @@ const About = () => {
           </CircularProgress>
           <CircularProgress
             mr={5}
-            size="120px"
             value={90}
             color="yellow.600"
             thickness="8px">
@@ -305,7 +323,6 @@ const About = () => {
           </CircularProgress>
           <CircularProgress
             mr={5}
-            size="120px"
             value={90}
             color="yellow.600"
             thickness="8px">
@@ -319,7 +336,6 @@ const About = () => {
           </CircularProgress>
           <CircularProgress
             mr={5}
-            size="120px"
             value={90}
             color="yellow.600"
             thickness="8px">
@@ -332,7 +348,8 @@ const About = () => {
             </CircularProgressLabel>
           </CircularProgress>
         </Box>
-      </Box>
+        </Box>
+        </Box>
     </>
   );
 };
