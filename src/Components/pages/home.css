@@ -1,10 +1,7 @@
-
 #more {
   margin: auto;
   cursor: pointer;
-  opacity: 0;
-  animation: fadeIn 2s ease-in 1 forwards;
-  animation-delay: 1s;
+  animation: fadeIn 2s ease-in-out 1 forwards;
   margin-left: 48vw;
   height: 1.5rem;
   width: 1.5rem;
@@ -12,8 +9,6 @@
 
 #hi {
   opacity: 1;
-/*   animation: slideIn 1s ease-out 1 forwards;
-  transform: translateX(-30%) */;    
   margin-top: 20vh;
   margin-bottom: 7vh;
   line-height: 4.5rem;
@@ -23,7 +18,8 @@
 #intro {
   font-size: 1.1rem;
   line-height: 2.2;
-  letter-spacing: 0.09rem;    width: 70vw;
+  letter-spacing: 0.09rem;
+  width: 70vw;
   width: 80vw;
   text-align: center;
   margin: auto;
@@ -36,6 +32,7 @@
 #box-hidden {
   width: 90%;
   margin-left: 0vw;
+  animation: fadeIn 2s ease-in 1 forwards;
 }
 
 @keyframes slideIn {
@@ -57,57 +54,47 @@
   }
 }
 
-
 /* FOR BIG SCREENS LIKE LAPTOP OR DESKTOPS
  */
 @media screen and (min-width: 768px) {
   #more {
     margin: auto;
-    position:absolute;
-    left:-1vw;
-    bottom:95vh;
+    position: absolute;
+    left: -1vw;
+    bottom: 95vh;
   }
   #spacer {
     height: 22vh;
-  }
-  #box-hidden {
-    height: 60vh;
-    margin-top: 10vh;
-    width: 107%;
-    margin-left: -0vw;
-    background-color: transparent;
   }
   #hi {
     font-size: 9em;
     margin-left: -15vw;
     margin-top: 30vh;
     padding: 50px;
-    padding-right:0px;
+    padding-right: 0px;
     padding-top: 100px;
-    height:75vh;
+    height: 75vh;
     line-height: 8rem;
-
-    
   }
   #intro {
     text-align: start;
     margin: auto;
     margin-left: 2vw;
-    width:35vw;
-    height:100%;
+    width: 35vw;
+    height: 100%;
     padding: 10px 30px;
     background-color: transparent;
-
   }
-  #container-home{
+  #container-home {
     background-color: transparent;
-    height:137vh;
+    height: 137vh;
   }
   #box-hidden {
     height: 75vh;
     margin-top: -10vh;
     width: 107%;
     margin-left: -0vw;
+    background-color: transparent;
   }
   h2 {
     margin-top: 50px;
